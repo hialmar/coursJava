@@ -5,6 +5,8 @@ public class P3StructuresControle {
 	public static void main(String[] args) {
 		int a = 1;
 		int b = 2;
+		int c = 3;
+		boolean unBooleen = false;
 
 		// instruction conditionnelle
 		if (a == b) {
@@ -18,7 +20,20 @@ public class P3StructuresControle {
 			System.out.println("Ils sont inégaux");
 		}
 		
-		///// Ajouter des && || ! !=
+		// autre exemple
+		if ((a > b) && (a > c)) {
+			System.out.println("a est le plus grand des trois.");
+		} else {
+			System.out.println("a n'est pas le plus grand des trois.");
+		}
+		
+		// même exemple avec un booléen
+		unBooleen = (a > b) && (a > c);
+		if (unBooleen) {
+			System.out.println("a est le plus grand des trois.");
+		} else {
+			System.out.println("a n'est pas le plus grand des trois.");
+		}
 
 		// instruction conditionnelle avec plusieurs choix et choix par défaut
 		if (a < b) {
