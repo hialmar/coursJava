@@ -13,7 +13,7 @@ Environment - Environnement de Développement Intégré) Eclipse. Nous
 pouvons voir une liste des projets sur la gauche (appelée Package
 Explorer), Le projet ouvert appelé PremierProjet contient tous les
 exemples du cours. On y voit aussi la version de Java que nous
-utiliserons pour ce cours : Java SE 8 SE signifiant Standard Edition.
+utiliserons pour ce cours : Java SE 8. SE signifiant Standard Edition.
 Sur la droite nous voyons une vue synthétique du fichier ouvert au
 milieu. En bas, nous voyons la console qui affichera les sorties du
 programme et permettra aussi, ensuite, de taper des informations en
@@ -257,30 +257,49 @@ appelée println qui prends en paramètre une chaine de caractères et l'affiche
 Les fonctions portées par les objets sont appelées des méthodes.
 La différence essentielle avec une fonction normale est que dans le 
 corps de la méthode on pourra utiliser des variables qui seront, elles aussi,
-portées par l'objet.
+portées par l'objet. On appelle ces variables des attributs.
 
 Un objet est donc une collection de variables et de fonctions qui sont liées.
 
 La partie suivante du programme manipule des chaines de caractères.
 En effet, en Java, les chaines sont des objets.
 La première instruction de cette portion de code est une des manières de créer une chaine. 
-Ici une chaine vide. On voit qu'on utilise le mot clé new. 
+On voit qu'on utilise le mot clé new. 
 Ce mot clé sert à créer de nouveaux objets.
 Pour créer un nouvel objet on doit donc utiliser new suivi d'un nom de type d'objet 
 suivi de parenthèses. Entre parenthèses on peut passer des paramètres
-qui servent à initialiser les données de l'objet.
+qui servent à initialiser les données de l'objet comme ici.
 
 Penchons nous un peu sur les variables. Il s'agit ici de variables qui contiennent
 des références vers des objets. Pour reprendre l'analogie des boites, ici la boite
 ne contient pas l'objet, elle contient une étiquette qui indique où se trouve
 l'objet dans l'entrepot qui représente la mémoire.
 Et donc deux variables peuvent référencer le même objet.
+C'est ce que nous faisons ici.
+On peut vérifier avec l'opérateur == qu'il s'agit de la même référence et donc du même objet.
 
-Dans le second exemple on crée une nouvelle chaine initialisée avec une autre chaine.
-On crée donc une copie. On a ici bien deux objets en mémoire.
+Ensuite on crée une nouvelle chaine initialisée avec le premier objet.
+On crée donc une copie de l'objet. On a ici bien deux objets en mémoire.
+L'égalité n'est plus valable. Par contre, en interne, Java travaille avec la même zone mémoire.
+On peut le vérifier en comparant le résultat de la méthode intern() pour chaque objet.
 
 Le troisième exemple affecte à s2 une chaine constante en utilisant la notation classique.
 Ne nous trompons pas, il s'agit ici aussi d'un objet.
+Nous pouvons donc appeler des méthodes sur l'objet référencé par la variable.
+
+Les chaines de caractères en Java étant des objets constants, pour des raisons d'optimisation,
+l'objet référencé par la variable n'est ici jamais modifié.
+On verra ensuite qu'on peut tout à fait modifier des objets. C'est ici une spécifité des chaines.
+
+Nous créons ensuite un objet de type Scanner qui va travailler avec System.in, l'entrée standard.
+Cet objet nous permet de lire au clavier diverses choses tapées par l'utilisateur.
+
+Ici nous allons lire une ligne de texte.
+
+Si on exécute plusieurs fois le programme nous pouvons voir que bien que les objets sont toujours
+différents, les chaines internes peuvent éventuellement être identiques.
+
+
 
 
 P5 - Classes 
