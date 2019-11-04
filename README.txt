@@ -7,33 +7,38 @@ Script :
 
 Bienvenue dans cette vidéo du cours sur Java. Pour commencer, voilà un
 premier programme très simple qui écrit la phrase Hello World à l'écran.
+
 Avant de regarder en détail ce programme, regardons un petit peu la
 fenêtre de l'application. Il s'agit de l'IDE (Integrated Development
-Environment - Environnement de Développement Intégré) Eclipse. Nous
-pouvons voir une liste des projets sur la gauche (appelée Package
+Environment - Environnement de Développement Intégré) Eclipse. 
+
+Nous pouvons voir une liste des projets sur la gauche (appelée Package
 Explorer), Le projet ouvert appelé PremierProjet contient tous les
 exemples du cours. On y voit aussi la version de Java que nous
 utiliserons pour ce cours : Java SE 8. SE signifiant Standard Edition.
+
 Sur la droite nous voyons une vue synthétique du fichier ouvert au
 milieu. En bas, nous voyons la console qui affichera les sorties du
 programme et permettra aussi, ensuite, de taper des informations en
 entrée du programme. Enfin, la partie centrale, présente le programme en
 cours d'édition.
 
-Regardons maintenant ce programme : La première ligne indique un nom de
-paquetage. Il s'agit d'un concept qui permet de grouper entre eux de
-façon hiérarchique des fichiers Java. Ici nous avons un premier
-paquetage appelé cours qui contient un second paquetage appelé
-p1programmes. Nous pouvons voir cela dans la partie gauche de manière
-hiérarchique. Si vous ne le voyez pas comme ça dans votre fenêtre vous
-pouvez modifier le réglage en cliquant sur l'icône en forme de flèche en
-haut à droite du panneau et en choisissant "Package Presentation" et
-"Hierarchical".
+Regardons maintenant ce programme : 
+
+La première ligne indique un nom de paquetage. Il s'agit d'un concept 
+qui permet de grouper entre eux de façon hiérarchique des fichiers Java.
+
+Ici nous avons un premier paquetage appelé cours qui contient un second
+paquetage appelé p1programmes. Nous pouvons voir cela dans la partie 
+gauche de manière hiérarchique. Si vous ne le voyez pas comme ça dans
+votre fenêtre vous pouvez modifier le réglage en cliquant sur l'icône
+en forme de flèche en haut à droite du panneau et en choisissant 
+"Package Presentation" et "Hierarchical".
 
 Revenons au programme. Nous voyons aussi sur cette première ligne un
 commentaire. Les commentaires en Java peuvent être ajoutés en tapant
-deux fois le signe / Dans ce cas là tout le reste de la ligne (après les
-deux /) est un commentaire.
+deux fois le signe / 
+Dans ce cas là tout le reste de la ligne (après les deux /) est un commentaire.
 On peut aussi, comme on le voit, un peu plus bas, écrire le commentaire 
 entre /* et */ dans ce cas le commentaire
 peut s'étendre sur plusieurs lignes comme ici.
@@ -67,7 +72,7 @@ bouton droit sur l'icône du fichier dans le panneau de gauche et choisir
 
 On voit bien la phrase qui s'affiche dans la console.
 
-Je modifie le programme en tapant Bonjour le monde. Puis je le relance.
+Je modifie le programme en tapant "Bonjour le monde". Puis je le relance.
 Et on voit bien la nouvelle phrase dans la console.
 
 Essayons de créer un autre programme du même type.
@@ -80,20 +85,16 @@ puis Java Project
 On tape le nom du projet : SecondProjet
 
 Je laisse tout le reste par défaut. 
-On pourrait ici choisir un endroit spécifique
-ou stocker le projet.
-On pourrait ici utiliser une autre version de
-Java.
+On pourrait ici choisir un endroit spécifique ou stocker le projet.
+On pourrait ici utiliser une autre version de Java.
 On pourrait ne pas organiser le projet en plusieurs répertoires
 (ce qui n'est pas très pratique).
-La partie "Working Sets" permet
-d'organiser plusieurs ensembles de projets. 
+La partie "Working Sets" permet d'organiser plusieurs ensembles de projets. 
 Cliquons sur "Finish". 
 Le projet vient d'être ajouté au panneau de gauche. 
 Nous allons maintenant créer un fichier Java. 
 Choisissons à nouveau File puis New et ensuite Class. 
-Eclipse nous propose de mettre le fichier dans le répertoire de
-sources (src) 
+Eclipse nous propose de mettre le fichier dans le répertoire de sources (src) 
 Tapons main comme paquetage et Main comme nom de classe 
 On peut écrire cela comme on veut mais la convention veut qu'on écrive tout
 en minuscule pour les noms de paquetages et la première lettre de chaque
@@ -112,6 +113,10 @@ correspondre à ce que je tape. Ca peut permettre d'aller plus vite si le
 nom des fonctions est très long à taper par exemple. Il ne faut pas
 oublier le ; Je lance l'exécution comme tout à l'heure. Et voilà nous
 sommes désormais capables d'écrire des programmes simples en Java.
+
+
+
+
 
 P2 - Variables et constantes 
 LO : déclarer et utiliser des variables en langage Java 
@@ -138,13 +143,13 @@ Le type de la variable est écrit en premier : int. Il s'agit d'un des types
 entiers disponible en Java. 
 
 Il y a aussi byte qui peut contenir des entiers
-sur un octet, short, sur 2 octets, int, donc, sur 4 octets et long sur 8
+sur un octet, short, sur 2 octets, int sur 4 octets et long sur 8
 octets. 
 
 En Java il n'y a que des entiers signés. Donc pour les int, par
 exemple comme notre variable, on pourra stocker des nombres allant de 
 -2 milliard à +2 milliard. Les valeurs précises correspondant à des 
-puissances de 2. On a donc une boite de taille 4. 
+puissances de 2. On a donc une boite de taille 4 octets. 
 
 Ensuite on voit le nom de la variable. Ici unEntier. On vous recommande
 de bien nommer vos variables et d'utiliser la convention qui veut
@@ -169,7 +174,7 @@ Ces dernières variables sont  surtout utilisées dans des instructions
 conditionnelles et des boucles que nous verrons dans la prochaine vidéo.
 
 Une fois ces variables définies nous pouvons modifier leurs valeurs.
-Ainsi, la valeur varie et c'est de là que vient le nom de variable.
+Ainsi, la valeur varie et c'est de là que vient le nom de "variable".
 
 Pour modifier leur valeur on utilise le signe égal comme en C.
 Attention, comme en C, pour comparer deux valeurs on utilisera le
