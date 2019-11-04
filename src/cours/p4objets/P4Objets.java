@@ -12,20 +12,30 @@ public class P4Objets {
 		System.err.println("Test!");
 		
 		// Créons un objet de type String (chaîne de caractères)
-		String s = new String();
+		String s = new String("Hello World!");
 		System.out.println("<"+s+">");
-		// Créons un autre objet en l'initialisant
-		String s2 = new String("test");
+		// Déclarons une autre variable et recopions la référence de l'objet créé précédemment.
+		String s2 = s; 
+		// vérifions que les deux variables correspondent au même objet
+		System.out.println("<"+(s == s2)+">");
+		// Créons un autre objet en l'initialisant (ici on a réalisé une copie de l'objet).
+		s2 = new String(s);
 		System.out.println("<"+s2+">");
-		// pour les chaines on peut aussi écrire :
+		// ici on a bien deux objets différents
+		System.out.println("<"+(s == s2)+">");
+		// Mais les chaines de caractères internes sont bien les mêmes (il n'y a pas de duplication de mémoire)
+		System.out.println("<"+(s.intern() == s2.intern())+">");
+
+		// Note : pour les chaines on peut aussi écrire :
 		s2 = "test";
 		
-		// Appelons des méthodes sur notre second objet
+		// Appelons des méthodes sur un objet
 		System.out.println("<"+s2.charAt(0)+">");
 		System.out.println("<"+s2.substring(2)+">");
 		System.out.println("<"+s2.toUpperCase()+">");
 		
 		// Notons qu'ici l'objet n'est pas modifié
+		// En effet les chaines de type String sont toujours constantes en Java
 		System.out.println("<"+s2+">");
 		
 		// Créons un objet qui permet de lire du texte
@@ -39,65 +49,13 @@ public class P4Objets {
 		System.out.println("Tapez quelque chose s'il vous plait :");
 		String s3 = lecteur.nextLine();
 		System.out.println("Vous avez tapé : "+s3);
+		// ici aussi on a bien deux objets différents
+		System.out.println("<"+(s2 == s3)+">");
+		// si on tape 'test' on aura la même chaine interne, sinon elle sera différente
+		System.out.println("<"+(s2.intern() == s3.intern())+">");
 		
 		// quand on n'en a plus besoin on peut le fermer
 		lecteur.close();
-		
-		// tableau
-		// attention il faut créer les "cases" du tableau en utilisant l'opérateur new
-		int [] tabEntiers = new int[3];
-		// les tableaux fonctionnent un peu comme des objets et ont un attribut length
-		// qui stocke la taille du tableau
-		// pour les parcourir on commence à 0
-		// voilà une boucle pour remplir le tableau
-		for(int i=0; i<tabEntiers.length; i++) {
-			// on affecte un entier à la i-ème case du tableau
-			tabEntiers[i] = i;
-		}
-		
-		// tableau d'objets
-		// ici on ne crèe que les cases du tableau
-		// il faudra ensuite créer les objets
-		String [] tabChaines = new String[3];
-		for(int i=0; i<tabChaines.length; i++) {
-			// on crèe un objet et on range sa référence dans la case du tableau
-			tabChaines[i] = new String("chaine "+i);
-		}
-		
-		// Affichons le tableau
-		for(int i=0; i<tabChaines.length; i++) {
-			System.out.println(tabChaines[i]);
-		}
-		
-		// on peut aussi écrire
-		// la variable chaine prendra successivement la valeur de chaque chaine du tableau
-		// on appelle parfois cette boudle un for each
-		for(String chaine : tabChaines) {
-			System.out.println(chaine);
-		}
-		
-		// Il y a aussi des classes Java qui gèrent des listes d'objets
-		// la notation <String> s'appelle un paramètre de généricité
-		// la généricité est un concept avancé
-		// disons simplement ici qu'on indique à Java qu'on veut
-		// une liste de chaînes de caractères
-		ArrayList<String> listeChaines = new ArrayList<String>();
-		listeChaines.add("une chaine");
-		listeChaines.add("une autre chaine");
-		// Java sait afficher les listes d'objets
-		System.out.println(listeChaines);
-		
-		// Si on veut une liste d'entier on doit utiliser la classe Integer 
-		// qui permet de transformer un entier en objet
-		ArrayList<Integer> listeEntiers = new ArrayList<Integer>();
-		listeEntiers.add(1);
-		listeEntiers.add(2);
-		int somme = 0;
-		// on peut utiliser un for each par parcourir les listes
-		for(int entier : listeEntiers) {
-			somme += entier;
-		}
-		System.out.println("La somme vaut "+somme);
 		
 	}
 
