@@ -206,7 +206,7 @@ P3 - Structures de contrôle (et portée des variables)
 LO : utiliser des structures de contrôle dans un programme en langage Java
 
 Le but de cette vidéo est d'apprendre à écrire des structures de contrôle en Java.
-Les structures de contrôles sont, pour l'essentiel, identique au langage C.
+Les structures de contrôle sont, pour l'essentiel, identique au langage C.
 
 On peut donc écrire des expressions conditionnelles if else.
 
@@ -227,8 +227,8 @@ Le bloc de code qui se trouve après le else sera exécuté si l'expression
 booléenne est fausse.
 
 Les expressions booléennes peuvent être plus complexes qu'une simple 
-déclaration et on pourra utiliser les opérateurs booléens et, ou, non...
-On voit ici un et écrit avec deux signes et commercial.
+déclaration et on pourra utiliser les opérateurs booléens "et", "ou", "non"...
+On voit ici un "et" écrit avec deux signes "et commercial".
 Le ou s'écrit avec deux barres verticales et le non avec un point d'exclamation
 comme en C.
 On vous recommande de bien parantheser les expressions comme on l'a fait ici.
@@ -243,7 +243,7 @@ s'il y a plus de deux alternatives comme ici.
 Comme en C si on veut tester différentes valeurs pour la même variable on
 peut utiliser l'instruction switch case comme ici.
 Attention de ne pas oublier les instructions break.
-Sans cela, le code des cas suivants sont aussi exécutés.
+Sans cela, le code des cas suivants est aussi exécuté.
 Cela n'aide pas à la compréhension.
 
 Nous avons fait le tour des instructions conditionnelles, voyons maintenant
@@ -269,6 +269,11 @@ Enfin on peut aussi utiliser des boucles do / while qui ont la particularité
 d'exécuter au moins une fois le bloc de code.
 
 Exécutons le code.
+
+
+
+
+
 
 P4 - Objets et Collections 
 LO : expliquer le principe de base de la programmation par objets 
@@ -334,6 +339,9 @@ Ici nous allons lire une ligne de texte.
 
 Si on exécute plusieurs fois le programme nous pouvons voir que bien que les objets sont toujours
 différents, les chaines internes peuvent éventuellement être identiques.
+
+
+=========
 
 
 
