@@ -33,8 +33,9 @@ haut à droite du panneau et en choisissant "Package Presentation" et
 Revenons au programme. Nous voyons aussi sur cette première ligne un
 commentaire. Les commentaires en Java peuvent être ajoutés en tapant
 deux fois le signe / Dans ce cas là tout le reste de la ligne (après les
-deux /) est un commentaire On peut aussi, comme on le voit, un peu plus
-bas, écrire le commentaire entre /* et */ dans ce cas le commentaire
+deux /) est un commentaire.
+On peut aussi, comme on le voit, un peu plus bas, écrire le commentaire 
+entre /* et */ dans ce cas le commentaire
 peut s'étendre sur plusieurs lignes comme ici.
 
 La ligne de code suivante est une déclaration de classe. Nous
@@ -50,8 +51,11 @@ reviendrons plus tard sur la signification des différents mots clés.
 
 Enfin, la dernière ligne de code (à part les accolades qui servent à
 fermer les blocs de code) contient l'instruction qui permet d'afficher
-du texte. System.out.println("Hello World"); On demande donc à Java
-d'afficher (println) le texte sur la sortie standard (out) du Système.
+du texte. 
+System.out.println("Hello World"); 
+
+On demande donc à Java d'afficher (println) le texte sur la sortie 
+standard (out) du Système.
 ln signifiant qu'on passera à la ligne suivante une fois le texte
 affiché.
 
@@ -64,33 +68,50 @@ bouton droit sur l'icône du fichier dans le panneau de gauche et choisir
 On voit bien la phrase qui s'affiche dans la console.
 
 Je modifie le programme en tapant Bonjour le monde. Puis je le relance.
-Et on voit bien la phrase dans la console.
+Et on voit bien la nouvelle phrase dans la console.
 
 Essayons de créer un autre programme du même type.
 
-Créons un nouveau projet. Dans les menus nous choisissons : File puis
-New puis Java Project On tape le nom du projet : SecondProjet Je laisse
-tout le reste par défaut. On pourrait ici choisir un endroit spécifique
-ou stocker le projet, On pourrait ici utiliser une autre version de
-Java, On pourrait ne pas organiser le projet en plusieurs répertoires
-(ce qui n'est pas très pratique) La partie "Working Sets" permet
-d'organiser plusieurs ensembles de projets. Cliquons sur "Finish". Le
-projet vient d'être ajouté au panneau de gauche. Nous allons maintenant
-créer une classe Java. Choisissons à nouveau File puis New et ensuite
-Class. Eclipse nous propose de mettre le fichier dans le répertoire de
-sources (src) Tapons main comme paquetage et Main comme nom de classe On
-peut écrire cela comme on veut mais la convention veut qu'on écrive tout
+Créons un nouveau projet. 
+
+Dans les menus nous choisissons : File 
+puis New 
+puis Java Project 
+On tape le nom du projet : SecondProjet
+
+Je laisse tout le reste par défaut. 
+On pourrait ici choisir un endroit spécifique
+ou stocker le projet.
+On pourrait ici utiliser une autre version de
+Java.
+On pourrait ne pas organiser le projet en plusieurs répertoires
+(ce qui n'est pas très pratique).
+La partie "Working Sets" permet
+d'organiser plusieurs ensembles de projets. 
+Cliquons sur "Finish". 
+Le projet vient d'être ajouté au panneau de gauche. 
+Nous allons maintenant créer un fichier Java. 
+Choisissons à nouveau File puis New et ensuite Class. 
+Eclipse nous propose de mettre le fichier dans le répertoire de
+sources (src) 
+Tapons main comme paquetage et Main comme nom de classe 
+On peut écrire cela comme on veut mais la convention veut qu'on écrive tout
 en minuscule pour les noms de paquetages et la première lettre de chaque
-mot en majuscule pour le nom de la classe. Je vais ensuite demander à
-Eclipse la création de la fonction main en cliquant ici. Je vais aussi
-demander la génération automatique de commentaires et laisser le reste
-par défaut. Je clique Finish et voilà ma classe. Il ne reste plus qu'a
-remplacer le commentaire TODO par mon System.out.println("Coucou"); Vous
-pouvez remarquer que l'éditeur de texte affiche tout ce qui pourrait
+mot en majuscule pour le nom de la classe. 
+
+Je vais ensuite demander à Eclipse la création de la fonction main en cliquant ici. 
+Je vais aussi demander la génération automatique de commentaires et laisser le reste
+par défaut. 
+Je clique Finish et voilà ma classe. 
+
+Il ne reste plus qu'a remplacer le commentaire TODO par 
+System.out.println("Coucou"); 
+
+Vous pouvez remarquer que l'éditeur de texte affiche tout ce qui pourrait
 correspondre à ce que je tape. Ca peut permettre d'aller plus vite si le
 nom des fonctions est très long à taper par exemple. Il ne faut pas
 oublier le ; Je lance l'exécution comme tout à l'heure. Et voilà nous
-sommes désormais capables d'écrire des programmes simple en Java.
+sommes désormais capables d'écrire des programmes simples en Java.
 
 P2 - Variables et constantes 
 LO : déclarer et utiliser des variables en langage Java 
@@ -100,11 +121,12 @@ Script : Bienvenue dans cette vidéo du cours sur Java. Nous allons voir
 dans cette séquence la déclaration et l'utilisation de Variables en
 langage Java. C'est très similaire aux autres langages de programmation
 dérivés du C donc vous devriez être en terrain connu. D'abord un petit
-rappel : une variable est définie par un nom, une valeur et un type. On
-peut faire une analogie avec une boite. Si on considère la mémoire de
+rappel : une variable est définie par un nom, une valeur et un type. 
+
+On peut faire une analogie avec une boite. Si on considère la mémoire de
 l'ordinateur comme un gigantesque entrepot, dans cet entrepot on va trouver 
 des millions de boites. Ces boites peuvent avoir des tailles différentes pour
-contenir différents types de choses. Elles vont donc contenir des choses.
+contenir différents types de choses.
 Pour pouvoir les repérer on va coller dessus des étiquettes.
 La variable est la boite, la taille de la boite correspond à son type, 
 la chose dans la boite est la valeur. L'étiquette correspond au non de la 
@@ -113,16 +135,22 @@ variable.
 Regardons ce programme, on va y trouver au début 4 variables de divers
 types. Voyons la première. 
 Le type de la variable est écrit en premier : int. Il s'agit d'un des types
-entiers disponible en Java. Il y a aussi byte qui peut contenir des entiers
+entiers disponible en Java. 
+
+Il y a aussi byte qui peut contenir des entiers
 sur un octet, short, sur 2 octets, int, donc, sur 4 octets et long sur 8
-octets. En Java il n'y a que des entiers signés. Donc pour les int, par
+octets. 
+
+En Java il n'y a que des entiers signés. Donc pour les int, par
 exemple comme notre variable, on pourra stocker des nombres allant de 
--2 milliards à +2 milliards. Les valeurs précises correspondant à des 
+-2 milliard à +2 milliard. Les valeurs précises correspondant à des 
 puissances de 2. On a donc une boite de taille 4. 
+
 Ensuite on voit le nom de la variable. Ici unEntier. On vous recommande
 de bien nommer vos variables et d'utiliser la convention qui veut
 que le premier mot soit en minuscule et les mots suivants commencent
 par une majuscule.
+
 Ensuite on va trouver une affectation qu'on appelle une initialisation.
 On vous conseille de le faire systématiquement.
 Notre boite est donc étiquetée avec le nom unEntier et contient une chose 
@@ -131,20 +159,21 @@ ici l'entier valant 1.
 Ensuite nous trouvons une variable de type réel. Ici un double qui 
 représente des réels en virgule flottante codés sur 64 bits.
 Il y a aussi en Java comme en C le type float où les réels sont 
-codés sur 32 bits (et donc sont moins précis).
+codés sur 32 bits (et donc ils sont moins précis).
 
 Nous voyons ensuite une variable de type caractère qui stocke uniquement
 un caractère. Et enfin une variable de type booléen qui ne peut stocker
-que la valeur vraie ou la valeur fausse. Ces dernières variables sont 
-surtout utilisées dans des instructions conditionnelles et des boucles
-que nous verrons dans la prochaine vidéo.
+que la valeur "vrai" ("true" en Anglais) ou la valeur "faux" ("false" en Anglais).
 
-Une fois ces variables définies nous pouvons modifier leur valeur.
-Leur valeur varie et c'est de là que vient le nom de variable.
+Ces dernières variables sont  surtout utilisées dans des instructions 
+conditionnelles et des boucles que nous verrons dans la prochaine vidéo.
+
+Une fois ces variables définies nous pouvons modifier leurs valeurs.
+Ainsi, la valeur varie et c'est de là que vient le nom de variable.
 
 Pour modifier leur valeur on utilise le signe égal comme en C.
 Attention, comme en C, pour comparer deux valeurs on utilisera le
-signe == comme on le voit ici.
+signe == comme on le voit un peu plus bas.
 
 On peut aussi récupérer la valeur d'une variable en écrivant le nom
 de la variable dans une expression. Ca peut permettre de faire des
@@ -162,9 +191,11 @@ Dans l'autre sens ça ne marche pas directement car on perd de l'information.
 Il faut réaliser un transtypage comme en C.
 
 Disons deux mots sur les constantes. Elles ressemblent à des variables
-mais sont préfixées par le mot clé final et ne peuvent donc pas changer
+mais sont préfixées par le mot clé "final" et ne peuvent donc pas changer
 de valeur.
 Elles servent à rendre les expressions arithmétiques plus claires.
+
+
 
 P3 - Structures de contrôle (et portée des variables) 
 LO : utiliser des structures de contrôle dans un programme en langage Java
