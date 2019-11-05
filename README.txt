@@ -343,8 +343,87 @@ différents, les chaines internes peuvent éventuellement être identiques.
 
 =========
 
+Dans cette leçon nous allons examiner les tableaux en Java.
+Les tableaux en Java ressemblent aux Objets car ils sont créés en utilisant new
+Il faudra préciser après le type des éléments des crochets pour que Java
+comprenne qu'il s'agit d'un tableau.
+Ensuite, lors de la création du tableau on reprécise le type des éléments
+et le nombre d'éléments (ou de cases) dans le tableau.
 
+Pour éviter de gérer avec une variable spécifique (ou une constante) la taille
+du tableau les concepteurs de Java ont fourni une sorte d'attribut sur le tableau
+appelé length.
+On voit ici un exemple de boucle qui parcourt un tableau et l'initialise.
+Pour manipuler une case du tableau on utilise la notation traditionnelle
+nom du tableau, suivi d'un crochet ouvrant, suivi de l'indice, suivi d'un crochet
+fermant.
+Attention : comme en C, les tableaux commencent à l'indice 0.
+Comme toute variable on peut y affecter quelque chose avec = ou l'utiliser
+dans une expression pour réaliser un calcul ou l'afficher.
 
+Pour les tableaux d'objets il faudra en plus des cases, créer les objets
+référencés par les cases avec d'autres new.
+
+Pour simplifier les boucles de parcours de tableau il y a une version
+simplifiée de la boucle for. Cela consiste, en paramètre du for, à 
+déclarer une variable du même type que les "cases" du tableau et à
+indiquer après le signe : le nom du tableau à parcourir.
+La variable prendra successivement la valeur (ou la référence pour
+des objets) contenue dans chaque case du tableau.
+
+Le problème des tableaux, en Java comme dans d'autres langages, c'est
+qu'il faut savoir à l'avance le nombre de valeurs qui seront utiles.
+C'est rarement le cas. Donc on peut utiliser d'autres structures
+de données plus complexes. Nous présentons ici les 3 plus utilisées.
+
+Le type qui ressemble le plus à un tableau est le type ArrayList.
+Il permet de manipuler des tableaux de taille quelconque.
+Java s'occupant de l'allocation de la mémoire au tableau.
+
+Ce type est un type générique. Cela veut dire qu'on peut utliser
+des tableaux avec des "cases" de n'importe quel type.
+On précisera le type des "cases" entre < et > après le type.
+Le concept de généricité est un concept avancé qui dépasse
+le cadre de ce cours. Nous ne ferons que l'utiliser en précisant
+des types pour les structures de données.
+Nous déclarons d'abord une liste d'entiers.
+Pour ajouter des entrées dans la liste on utilise la méthode add.
+Pour consulter une entrée de la liste on utilise la méthode get en
+précisant l'indice.
+
+Il y a de nombreuses méthodes disponibles pour les objets de ce type.
+On vous conseille de consulter la documentation en tapant dans votre
+navigateur "ArrayList Java 8" :
+https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+
+Il est à noter que comme pour la plupart des objets de types standard
+Java sait afficher une liste d'objets.
+
+Si on veut utliser une liste de valeurs de types de base, comme int,
+il faudra utiliser l'un des types d'objets équivalents.
+Pour int il s'agit du type Integer. Il y a aussi Byte, Short, Double, Float...
+Ainsi on déclarera une ArrayList d'Integer mais on pourra la manipuler
+comme une liste d'ints.
+Comme pour les tableaux on pourra utiliser un for simplifié pour la parcourir.
+
+Si, plutôt qu'une liste ordonnée, on veut utiliser un ensemble non
+ordonné dans lequel les objets ne peuvent exister en double, on pourra
+utiliser à la place de ArrayList le type HashSet.
+
+Si, enfin, nous souhaitons gérer des tableaux indicés par autre chose
+que des entiers (ou des tableaux avec des trous) on pourra utliser le
+type HashMap. Ici aussi il s'agit d'un type générique et on devra
+préciser le type des indices suivi du type des cases.
+Ici nous voyons une HashMap indicée par des chaines et qui contient
+des entiers correspondant à la population en millions de pays.
+On ajoute des éléments en utilisant la méthode put et en précisant
+l'indice (appelé aussi une clé) puis la valeur.
+Pour récupérer la valeur à partir de l'indice on utilisera ici aussi
+la méthode get.
+Il y a plusieurs façon de parcourir une HashMap suivant si on s'intéresse
+plus aux clés ou plus aux valeurs.
+Voilà une solution en utilisant une variable référence de type
+HashMap.Entry. On précise ici aussi les types des indices et des valeurs.
 
 P5 - Classes 
 LO : expliquer la notion de type et de classe 
