@@ -554,9 +554,26 @@ typé. Ce n'est pas le cas du langage Python par exemple.
 
 Les paramètres du constucteur servent en général à initialiser
 les attributs du futur objet. Ainsi dès leur création les objets 
-du même type peuvent avoir des valeurs d'attributs différents. 
+du même type peuvent avoir des valeurs d'attributs différentes. 
 
+Voyons maintenant les méthodes.
 
+La première méthode ressemble à celle que nous avions précédemment.
+
+La méthode suivante a un paramètre de type objet String.
+
+La méthode setAge lui ressemble mais il y a quelques différences 
+intéressantes. Tout d'abord elle s'appelle setAge et sert à
+modifier l'attribut age. On appelle ce genre de méthode un accesseur.
+On a aussi une méthode getAge qui sert à récupérer l'age du chat.
+
+A l'intérieur de la méthode on remarque l'utilisation du mot-clé
+this. Ce mot clé sert à récupérer la référence de l'objet courant.
+L'objet qui est manipulé par la méthode à un instant donné.
+On peut s'en servir, comme ici, pour différencier un attribut
+d'un paramètre. Ici le paramètre age à le même nom que l'attribut.
+Java comprends donc bien que c'est la valeur du paramètre qu'on
+recopie dans l'attribut et pas l'inverse.
 
 P8 - Exceptions 
 LO : expliquer la notion d'exception en programmation 
