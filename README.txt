@@ -428,17 +428,135 @@ HashMap.Entry. On précise ici aussi les types des indices et des valeurs.
 P5 - Classes 
 LO : expliquer la notion de type et de classe 
 LO : expliquer la notion de constructeur 
-LO : définir une classe simple en
-langage Java
+LO : définir une classe simple en langage Java
+
+Dans cette leçon nous allons apprendre à créer de nouveaux types d'objets 
+grâce au concept de Classe.
+
+Une classe est un modèle pour les futurs objets qui seront créés.
+On va y définir des attributs et des méthodes.
+Une fois la classe créée et compilée par le compilateur Java,
+nous pourrons utiliser son nom comme type, exactement comme pour les types 
+d'objets que nous avons vu jusqu'ici : String, ArrayList et ainsi de suite.
+Pour créer de nouveaux objets nous utiliserons donc le mot clé new.
+
+Voyons une première classe très simple.
+
+Pour déclarer une nouvelle classe nous utilisons le mot clé class déjà
+vu rapidement lors de la première leçon. Ensuite nous donnons un nom
+à la classe. 
+Cette classe porte le nom Chat et définira donc le type Chat.
+
+Ensuite on a un bloc entre deux accolades.
+
+Dans ce bloc on peut définir des variables qui seront portées par
+les futurs objets de type Chat. 
+Ces variables s'appellent des attributs.
+Ici on définit l'attribut "cri" de type objet String.
+Chaque objet créé aura une variable "cri" personnelle.
+C'est un peu comme les champs d'une strucure en C.
+
+On peut aussi définir des fonctions qui seront, elles aussi portées
+par les futurs objets de type Chat. 
+Ces fonctions s'appellent des méthodes.
+
+Ici on a défini une méthode crier(). On peut remarquer que
+dans la méthode on utlilise l'attribut cri défini plus avant.
+
+Comme chaque objet aura une variable cri personnelle, la méthode
+affichera la bonne variable quand on l'appellera sur le bon objet.
+Nous allons voir cela dans quelques instants.
+
+Regardons d'abord la dernière fonction définie. Elle est un peu
+spéciale. Tout d'abord elle a le même nom que la classe et elle
+n'a pas de type retour void. On reviendra sur ces types retours
+dans la leçon suivante.
+Cette méthode spéciale s'appelle un constructeur. Elle est
+appelée automatiquement quand on utilise le mot-clé new.
+C'est pour ça qu'il y avait des paranthèses après le nom d'un
+type objet quand on le constuisait. Comme toute autre méthode
+elle pourra avoir des paramètres. C'est ce qu'on a vu avec le
+type String qui pouvait prendre en paramètre une autre chaîne
+de caractères. Ici pour simplifier on n'a pas mis de paramètre.
+Le corps de la méthode donne une valeur par défaut à la variable
+cri de l'objet qui est en train d'être créé.
+
+Regardons comment utiliser notre nouvelle classe.
+
+Nous avons ici aussi une classe Main contenant la méthode main
+que nous connaissons déjà et qui définit le programme principal.
+
+Dans ce programme nous déclarons une première variable de type
+Chat appelée tom et nous l'initialisons en créant un nouvel
+objet de type Chat avec le mot clé new comme dans la leçon
+précédente.
+Une fois l'objet créé nous pouvons appeler des méthodes comme
+pour les objets des types standards de Java.
+Ici nous appelons la seule méthode disponible : crier.
+On peut définir une autre variable et créer un autre chat.
+
+Exécutons le programme.
+
+L'ennui c'est qu'ici les deux chats sont identiques.
+Modifions la variable cri du second chat.
+Comme pour les méthodes on utilise le . entre la variable
+hercule et l'attribut cri de l'objet référencé par la 
+variable hercule. hercule.cri signifie donc la variable cri
+de l'objet référencé par la variable hercule.
+Si on appelle à nouveau les méthodes crier pour chacun
+des deux objets on note bien que seul le cri d'hercule à changé.
+
+Les classes nous permettent donc de créer de nouveaux types d'objets.
+Chaque objet pouvant avoir autant de variables et de fonctions
+que désiré par le programmeur.
+
+Comme on l'avait dit précédemment on peut donc avoir simplement
+grâce au concept d'Objet et de Classe des ensembles de variables
+et de fonctions liées entre elles.
 
 P6 - Méthodes et Passage de paramètres (et public et private) 
 LO : expliquer les différents types de passage de paramètres 
 LO : définir et utiliser des méthodes avec des paramètres et des résultats 
 LO : rendre des attributs et méthodes privés ou publics en langage Java
 
+
+
 P7 - Static, Méthodes et attributs de classe 
 LO : expliquer la notion d'attribut et de méthode de classe en POO 
 LO : rendre des attributs et méthodes statiques en langage Java
+
+Revenons dans cette leçon sur la classe Chat.
+Nous avons ajouté sur cette déclaration de classe le mot-clé public.
+Un peu plus bas nous voyons un autre mot-clé private.
+Ces mots-clés servent à limiter ou non la visibilité des classes
+et des attributs et méthodes.
+Le fait de rendre une classe publique permet la création d'objets
+de ce type en dehors du paquetage qui contient la classe.
+La grande majorité des classes que nous écrirons seront publiques.
+
+Le fait de rendre privé un attribut d'une classe permet de s'assurer
+qu'on ne pourra le modifier que dans la classe courante.
+En général tous les attributs sont privés et les méthodes sont
+publiques. On pourra toutefois avoir des méthodes privées qui ne
+pourront être utilisées que par d'autres méthodes de la même classe.
+
+On verra par la suite un autre mot clé (protected) qui gérera lui
+aussi la visibilité et l'accessibilité des attributs et des méthodes.
+
+Continuons d'examiner la classe.
+
+On remarque qu'il y a deux constructeurs et que le premier
+prends un paramètre. Ce paramètre s'utilise comme une variable
+dans la méthode. Exactement comme en C ou d'autres langages.
+On notera simplement que le paramètre, comme toute variable,
+est défini avec un type. Java, comme le C, est un langage fortement
+typé. Ce n'est pas le cas du langage Python par exemple.
+
+Les paramètres du constucteur servent en général à initialiser
+les attributs du futur objet. Ainsi dès leur création les objets 
+du même type peuvent avoir des valeurs d'attributs différents. 
+
+
 
 P8 - Exceptions 
 LO : expliquer la notion d'exception en programmation 

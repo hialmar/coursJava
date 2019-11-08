@@ -11,6 +11,15 @@ public class Main {
 		Chat hercule = new Chat();
 		// lui aussi peut crier
 		hercule.crier();
+		
+		/*
+		// changeons le cri d'hercule
+		hercule.cri = "Meow";
+		
+		// seul le cri d'hercule à changé.
+		tom.crier();
+		hercule.crier();
+		*/
 
 	}
 
