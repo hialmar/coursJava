@@ -15,6 +15,8 @@ public class Chat {
 	
 	// on va aussi définir une méthode static (et donc ici aussi unique pour tous les objets de la même classe)
 	public static int getCompteur() {
+		// this n'est pas valable car il n'y a pas d'objet courant
+		// this.age = 1;
 		return compteur;
 	}
 	

@@ -12,8 +12,8 @@ public class Main {
 		hercule.crier();
 		
 		// appelons une méthode avec un paramètre
-		tom.renommer("Tom le Chat");
 		// une méthode peut modifier un objet
+		tom.renommer("Tom le Chat");
 		tom.crier();	
 		
 		tom.setAge(4);
@@ -32,6 +32,7 @@ public class Main {
 		tom.seBattre(hercule, duree);
 		// ici hercule a été modifié
 		hercule.crier();
+		System.out.println("Duree n'est pas modifiée : "+duree);
 	}
 
 }

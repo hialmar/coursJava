@@ -597,11 +597,46 @@ Il est à noter que si on modifie la variable autreChat (et pas le chat
 référencé par la variable) nous n'avons pas d'effet de bord.
 La variable paramètre est en effet locale à la méthode.
 
+Voyons maintenant le programme principal et son exécution.
+
+On créé deux chats.
+On appelle les méthodes crier.
+L'une d'elle modifie le nom du premier chat.
+On voit bien la modification lors du deuxième appel de la méthode crier.
+
+On donne ensuite des ages aux chats et on utilise la méthode estPlusVieuxQue 
+pour comparer les ages.
+
+La dernière partie du programme permet de montrer la différence de passages
+de paramètre entre le chat hercule qui est modifié par effet de bord et
+duree qui ne l'est pas.
+La variable hercule n'est par contre pas modifiée.
 
 P7 - Static, Méthodes et attributs de classe 
 LO : expliquer la notion d'attribut et de méthode de classe en POO 
 LO : rendre des attributs et méthodes statiques en langage Java
 
+Cette leçon présente le concept d'attribut et de méthode de classe.
+Un attribut et une méthode de classe sont uniques pour tous les objets
+de la classe. Ce concept est proche du concept de variable globale dans
+d'autres langages.
+
+Ca peut servir, comme ici, à compter le nombre d'objets créés.
+
+Pour déclarer un attribut de classe, on ajoute le mot clé static.
+Ici il y aura un seul compteur pour tous les objets de la classe et donc
+si on incrémente de 1 ce compteur dans chacun des constructeurs on
+compte bien le nombre de chats qui sont créés dans le main.
+
+On ajoute aussi une méthode déclarée avec le mot clé static pour
+récupérer la valeur de l'attribut.
+
+On note dans le programme principal que pour appeler cette méthode il
+faut indiquer le nom de la classe à la place d'une variable de type objet.
+
+Il s'agit donc d'un concept proche de celui de fonction dans d'autres langages.
+Il n'y a pas d'objet courant lors de l'appel de la méthode et donc si on utilise
+this il y aura une erreur.
 
 P8 - Exceptions 
 LO : expliquer la notion d'exception en programmation 
