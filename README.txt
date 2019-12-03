@@ -519,12 +519,6 @@ LO : expliquer les différents types de passage de paramètres
 LO : définir et utiliser des méthodes avec des paramètres et des résultats 
 LO : rendre des attributs et méthodes privés ou publics en langage Java
 
-
-
-P7 - Static, Méthodes et attributs de classe 
-LO : expliquer la notion d'attribut et de méthode de classe en POO 
-LO : rendre des attributs et méthodes statiques en langage Java
-
 Revenons dans cette leçon sur la classe Chat.
 Nous avons ajouté sur cette déclaration de classe le mot-clé public.
 Un peu plus bas nous voyons un autre mot-clé private.
@@ -574,6 +568,40 @@ On peut s'en servir, comme ici, pour différencier un attribut
 d'un paramètre. Ici le paramètre age à le même nom que l'attribut.
 Java comprends donc bien que c'est la valeur du paramètre qu'on
 recopie dans l'attribut et pas l'inverse.
+
+Les deux méthodes suivantes permettent de récupérer les valeurs des
+attributs age et nom. Alors que toutes les méthodes vues jusq'ici
+étaient déclarées void (et ne retournaient donc aucune informations)
+ici on a des types de retour String et int. Ces types s'utilisent
+en lien avec le mot clé return qui permet à la méthode de renvoyer
+une valeur au programme ou à la méthode l'appelant.
+On notera qu'on peut renvoyer ainsi des objets (comme ici ceux de type
+String). Ces objets sont renvoyés par référence. Il n'y a pas de
+duplication d'objet. On travaillera sur le même objet que celui
+référencé par l'attribut nom (ici).
+
+La méthode suivante estPlusVieuxQue prend un objet en paramètre.
+Sur cet objet qui est passé par référence comme pour le retour de
+la méthode getNom. Nous pouvons donc appeler des méthodes sur
+le chat passé en paramètre de la méthode.
+
+Nous pouvons voir sur la méthode suivante la différence de passage
+de paramètre entre les objets et les types de base.
+La grosse différence est visible lorsqu'on appelle la méthode renommer
+sur autreChat. Ici le chat est modifié partout. On appelle ça un effet
+de bord. Alors que la variable duree contient une copie de la durée
+passée en paramètre et donc si on modifie la durée dans la méthode
+elle n'est pas modifiée en dehors de la méthode.
+
+Il est à noter que si on modifie la variable autreChat (et pas le chat
+référencé par la variable) nous n'avons pas d'effet de bord.
+La variable paramètre est en effet locale à la méthode.
+
+
+P7 - Static, Méthodes et attributs de classe 
+LO : expliquer la notion d'attribut et de méthode de classe en POO 
+LO : rendre des attributs et méthodes statiques en langage Java
+
 
 P8 - Exceptions 
 LO : expliquer la notion d'exception en programmation 
