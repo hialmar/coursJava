@@ -643,9 +643,163 @@ LO : expliquer la notion d'exception en programmation
 LO : déclarer l'émission d'exceptions et attrapper des exceptions en
 langage Java
 
+Lors de l'exécution d'un programme il peut y avoir des problèmes.
+Par exemple : le fichier que l'on doit utiliser n'est plus accessible, il n'y a
+plus d'espace sur le disque dur, un utilisateur tape un mot au lieu d'un nombre...
+
+Dans de nombreux langages le concept d'exception sert à gérer ce genre de problème.
+L'idée est de ne pas traiter les problèmes à l'endroit où ils sont detectés mais
+de les traiter à un autre endroit.
+
+L'intérêt est de rendre l'algorithme nominal (celui qui se déroule s'il n'y a pas
+de problème) le plus simple possible.
+
+En Java, quand un problème survient une exception est générée.
+
+Regardons le premier programme. On voit bien qu'il va y avoir une division
+par zéro sur la ligne 9. Exécutons le.
+Un message d'erreur s'affiche. Il nous indique l'erreur et l'endroit où elle s'est produite.
+D'autre part, le programme s'arrête.
+
+En Java on a deux solutions pour gérer les problèmes :
+- attraper les exceptions et les traiter ;
+- propager les exceptions pour les traiter ailleurs ; 
+
+Le second programme montre la première solution.
+La partie qui peut poser problème est entourée par un bloc avec le mot clé try.
+On essaye donc d'exécuter le code.
+S'il y a un problème (ici la division par zéro) on ira dans le bloc catch correspondant
+à l'exception et on affichera le message d'erreur.
+Il est important de noter que le code qui suit le problème ne sera pas exécuté.
+Dès qu'une exception est générée on arrête l'algorithme normal et on passera en
+gestion d'exception jusqu'à ce que l'exception soit attrapée. Si l'exception
+n'est jamais attrapée (comme dans le premier programme) le programme s'arrête en
+affichant la localisation de l'erreur.
+
+Il est à noter qu'on aurait pû mettre cela dans une boucle et retenter avec une autre 
+opération.
+
+Pour l'instant nous avons vu des exceptions dite RuntimeException pour lesquelles
+nous ne sommes pas obligé de faire quelque chose (tout simplement car elles arrivent
+souvent et donc qu'il vaut mieux gérer le problème en ammont dans l'algorithme).
+
+Cependant, de nombreuses exceptions doivent absolument être traitées par le développeur.
+Le programme Exception3 montre une telle exception. Cette exception nous indique qu'un
+fichier est introuvable.
+On ne peut écrire le code sans traiter cette exception comme ici avec un try/catch
+ou comme dans le programme suivant.
+Lorsqu'on essaie de fermer un fichier ouvert il peut se produire une exception (c'est
+très rare cela dit) et donc il faut la gérer aussi.
+
+Le 4ème programme montre la propagation des exceptions. Ici nous ouvrons le fichier dans
+une méthode et nous ne voulons pas (ou nous ne pouvons pas) traiter l'exception 
+FileNotFoundException ici.
+Donc nous ajoutons dans la déclaration de la méthode le mot clé throws et le type
+de l'exception qui peut être lancée dans la méthode.
+On peut très bien attraper certaines exceptions et en propager d'autres comme c'est
+fait ici.
+
+Dans le programme principal on attrapera l'exception et on la traitera.
+
+Cette façon de faire est très utilisée dans les bibliothèques. En effet on préféra
+traiter les exceptions dans le programme principal ou dans une interface graphique.
+C'est donc le développeur du programme final qui choisira. Le développeur de la 
+bibliothèque ne peut pas savoir, par exemple, qu'on va introduire une interface
+graphique avec des fenêtres présentant les messages d'erreur à l'utilisateur.
+
+Un développeur peut aussi créer de nouvelles exceptions et les gérer.
+Nous verrons ça à la fin de la leçon sur l'héritage.
+
 P9 - Héritage (et protected) 
 LO : expliquer la notion d'héritage en POO
 LO : faire hériter une classe d'une autre classe en langage Java
+
+Il arrive souvent que deux types d'objets sont très proches. Des variables et
+des méthodes sont identiques ou très peu différentes. Une solution peu efficace
+consiste à dupliquer le code dans les deux classes. L'ennui c'est que si on modifie
+le code dans l'avenir (par exemple pour corriger un problème) on oubliera peut-être
+de le modifier dans la seconde classe.
+
+Une meilleure solution est proposée par le concept d'héritage.
+Lors de la création d'une nouvelle classe on peut préciser qu'on souhaite hériter
+d'une classe déjà existante. On récupèrera toutes les fonctionnalités de la classe
+dont on hérite et on pourra modifier les méthodes et les valeurs des variables
+ainsi qu'ajouter de nouveaux attributs et méthodes.
+
+On doit noter ici qu'en Java une classe ne peut hériter que d'une seule classe.
+D'autre part, une classe qui n'hérite pas explicitement d'une autre classe, hérite
+automatiquement de la classe Object. L'ensemble des classes forme donc une hiérarchie
+dont la racine est la classe Object.
+
+Voyons cela sur un exemple. Nous souhaitons toujours manipuler des chats mais nous
+voulons aussi manipuler des oiseaux. On pourrait créer uniquement la classe Oiseau.
+Mais on se rend compte qu'il y a des choses communes entre les oiseaux et les chats.
+Ce sont tous deux des animaux. On va donc créer une classe Animal dans laquelle
+on va mettre des attributs et méthodes communes à toutes les classes d'animaux.
+Ensuite, les classes Chat et Oiseau hériteront de la classe Animal.
+
+Dans l'exemple la classe Animal n'a qu'un attribut et une méthode mais on pourrait
+rendre cela beaucoup plus complexe.
+
+On note le mot clé protected devant l'attribut cri. Ce mot clé crée un niveau de
+protection intermédiaire entre public et private. Il signifie que les classes
+qui vont hériter de la classe Animal pourront modifier l'attribut sans passer
+par des méthodes publiques.
+
+C'est ce que fait la classe Oiseau dans le constructeur.
+On a aussi ajouté une autre méthode : voler. En effet les oiseaux peuvent voler
+mais pas les chats...
+
+La classe Chat modifie elle aussi le cri dans son constructeur et ajoute trois
+méthodes.
+
+Dans la méthode miauler nous retrouvons une exception. Il s'agit ici d'une nouvelle
+exception créée par héritage de la classe standard Exception.
+
+Cette classe d'exception définit une constante qui ne nous intéresse pas ici.
+
+Ce qui est plus intéressant c'est qu'elle redéfinit une méthode qui existe dans la
+classe Object : toString. Cette méthode sert à afficher un objet. On peut toujours
+la redéfinir. On note au dessus de la méthode qu'on a écrit @Override.
+Il s'agit d'une annotation. C'est un concept avancé que nous ne verrons pas dans
+le cours. Elle indique qu'on a redéfini la méthode toString.
+
+Revenons à la classe Chat. Dans la méthode miauler on trouve le mot clé throws qu'on
+a déjà vu et qui sert à propager l'exception du nouveau type.
+Pour lancer l'exception on utilisera le mot clé throw (sans s et qu'il ne faut pas
+confondre). Alors que throws indique que la méthode peut générer des exceptions (mais
+bien sûr c'est exceptionnel), throw demande explicitement à Java de lancer l'exception.
+Cette exception doit normalement se trouver derrière un if qui vérifiera la condition
+qui indique le problème. Ici si avec la méthode changerCri on indique une chaine nulle
+et que plus tard on appelle miauler, on aura une exception ExceptionChatMuet qui sera
+lancée.
+
+Regardons maintenant le programme principal.
+On y crée un chat et un oiseau. On appelle les méthodes crier héritées de la classe
+Animal puis des méthodes spécifiques.
+
+Ensuite on crée une liste d'animaux. Dans cette liste on peut placer des animaux
+de n'importe quel type qui hérite de la classe Animal.
+
+On peut ensuite, dans une boucle par exemple, appeler les méthodes de la classe Animal.
+
+Ensuite on change le cri de tom pour déclencher ensuite l'exception.
+On voit lors de l'exécution que la méthode toString est appelée par la méthode
+e.printStackTrace() qu'on utilise souvent et qui indique la localisation d'une exception.
+Ici on nous indique que l'exception est partie de la ligne 15 de la classe Chat et
+a été propagée à la ligne 31 de la classe Main. Ces informations sont utiles pour
+corriger un programme.
+
+Il est à noter qu'on ne peut pas appeler les méthodes spécifiques à Oiseau sur un Animal.
+
+Mais on peut transtyper les variables référençant des objets, comme on l'a fait pour 
+les double  et les int.
+Par contre si on transtype vers un type qui n'a rien à voir on aura des exceptions qui
+seront générées.
+Pour éviter cela on peut utiliser l'opérateur booléen instanceof qui renvoie true
+si un transtypage est possible ou false sinon.
+
+C'est ce que nous faisons en fin de méthode main.
 
 P10 - Interfaces 
 LO : expliquer la notion de classe abstraite et d'interface 

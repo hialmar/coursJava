@@ -2,6 +2,7 @@ package cours.p8exceptions;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 
 public class Exception3 {
 	
@@ -16,7 +17,14 @@ public class Exception3 {
 		// première solution : attraper l'exception :
 		try {
 			FileReader lectureFichier = new FileReader("truc");
+			
+			// Si le fichier n'existe pas nous n'exécuterons pas cette partie
+			// du bloc try
+			lectureFichier.close();
 		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

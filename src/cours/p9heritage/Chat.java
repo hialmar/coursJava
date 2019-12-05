@@ -6,7 +6,13 @@ public class Chat extends Animal {
 		cri = "Miaou";
 	}
 	
-	public void miauler() {
+	public void changerCri(String cri) {
+		this.cri = cri;
+	}
+	
+	public void miauler() throws ExceptionChatMuet {
+		if(cri == null)
+			throw new ExceptionChatMuet();
 		this.crier();
 	}
 	

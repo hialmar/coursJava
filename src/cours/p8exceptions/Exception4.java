@@ -2,6 +2,7 @@ package cours.p8exceptions;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 // un exemple un peu plus complet
@@ -15,6 +16,15 @@ public class Exception4 {
 	// dans cette fonction on ne va pas faire de try/catch car on ne sait pas comment traiter le problème
 	public void ouvrirFichier(String nomFichier) throws FileNotFoundException {
 		lectureFichier = new FileReader(nomFichier);
+		
+		// Si le fichier n'existe pas nous n'exécuterons pas cette partie
+		// de la méthode
+		try {
+			lectureFichier.close();
+		} catch (IOException e) {
+			// Cette exception ne nous intéresse pas, on peut donc la gérer ici
+			// en ne faisant rien
+		}
 	}
 	
 	// deuxième solution indiquer que la méthode peut générer une exception
