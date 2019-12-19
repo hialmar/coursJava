@@ -805,9 +805,123 @@ P10 - Interfaces
 LO : expliquer la notion de classe abstraite et d'interface 
 LO : utiliser des interfaces
 
+Dans d'autres langages orienté objets il y a un concept d'héritage multiple.
+Ce qui signifie qu'une classe peut hériter de plusieurs classes directement.
+Cela pose un certain nombre de problèmes qui dépassent le cadre de ce cours.
+
+En Java, on ne peut hériter que d'une seule classe. Mais le concept d'interface 
+remplace l'héritage multiple.
+
+Avant de le présenter nous allons voir le concept de classe abstraite qui est lié.
+
+Parfois il arrive qu'on ne puisse pas coder une ou plusieurs méthodes dans une classe.
+La ou les méthodes auront, par contre, une implémentation dans plusieurs classes
+dérivées qui seront spécifiques à ces classes.
+
+Revenons à notre ensemble de classes sur les animaux. Plutôt que de donner une
+implémentation par défaut de la méthode crier dans Animal, qui ne correspond à rien
+et qui affiche null si on ne change pas la variable cri, nous allons la déclarer abstraite.
+Il n'y aura aucun code pour cette méthode. Du coup on ne pourra pas créer d'objets
+de cette classe et elle deviendra abstraite.
+Il faut pour cela utiliser le mot clé abstract sur la méthode et sur la classe.
+Une classe qui a, au moins, une méthode abstraite est abstraite.
+
+Lorsqu'on dérive la classe on peut implémenter une ou plusieurs méthodes abstraites.
+S'il n'y a plus aucune méthode sans implémentation le classe devient une classe 
+normale et on peut créer des objets normalement.
+
+C'est ce que nous allons faire dans la classe Chat.
+
+Regardons maintenant la classe Oiseau. On peut dire qu'un oiseau est un animal qui vole.
+Mais il n'y a pas que des animaux qui volent. Les avions, eux aussi, volent.
+On aimerait donc pouvoir dire que les oiseaux et les avions sont similaires.
+
+Nous allons créer pour cela une interface. Une interface est comme une classe qui n'aurait
+que des méthodes abstraites. On ne peut donc pas créer des objets directement avec
+l'interface. On aura des classes qui implémenteront l'interface en implémentant ses
+méthodes.
+
+Ici nous appelons l'interface ObjetVolant et elle possède une méthode voler.
+
+Les classes Oiseau et Avion implanteront cette interface. Pour cela on indique sur la 
+première ligne de la classe le mot clé implements et le nom de l'interface.
+
+Si on hérite aussi d'une classe on doit d'abord indiquer extends avant implements comme
+pour Oiseau.
+On peut aussi implémenter plusieurs interfaces en séparant le nom des interfaces par des
+virgules.
+
+Nous pouvons par exemple implémenter l'interface Serializable de Java qui sert à indiquer
+au compilateur Java de générer des méthodes cachées permettant de sauver un objet dans
+un fichier et de le recharger.
+
+Dans le main, nous créons des animaux que nous rangeons dans une liste d'animaux.
+On parcourt ensuite la liste en appelant la méthode crier.
+
+De façon similaire on crée ensuite une liste d'objets volants (la définition d'une
+interface créant, comme pour les classes, un nouveau type).
+On y range l'oiseau et un nouvel avion.
+Ensuite on parcourt la liste en appelant la méthode voler.
+
+Tout se passe donc comme si la classe Oiseau héritait de deux classes...
+
 P11 - debug 
 LO : expliquer à quoi sert un debugger 
 LO : localiser des erreurs de programmation en langage Java en utilisant un debugger
 
+Dans cette leçon nous n'allons pas présenter de nouveaux concepts de Java.
+Nous allons montrer comment on peut corriger des problèmes et mettre au point une
+application Java avec un debugger.
 
+Un debugger permet d'exécuter une application pas à pas en regardant après chaque pas
+les valeurs des variables. Cela permet de mieux comprendre comment un programme
+fonctionne et surtout ça permet de localiser et corriger des problèmes.
 
+Regardons la classe MaClasse du paquetage de la leçon. Cette classe pose problème.
+Si vous ne le voyez pas tout de suite, essayons d'exécuter le main de la classe Main.
+
+Nous obtenons une exception NullPointerException. Java nous indique que l'exécution
+vient de la méthode uneMethode et nous dit que c'est à la ligne 7.
+
+Supposons que nous ne comprenons pas directement le problème.
+
+Au lieu d'exécuter le programme normalement nous allons le lancer avec le debugger
+intégré d'eclipse. Au lieu de démarrer le programme en utilisant l'option "Run As"
+nous allons utliser "Debug As" puis "Java Application".
+
+Eclipse nous propose de passer en perspective Debug (une perspective Eclipse
+est une configuration de sous-fenêtres). Acceptons la proposition.
+
+Nous voyons désormais en plus des fenêtres habituelles une sous-fenêtre
+appelée Variables ainsi qu'un paneau Breakpoints dans la même
+sous-fenêtre. 
+
+Lorsque l'exception est générée le programme ne s'arrête pas.
+Il se met en pause et nous pouvons examiner les variables.
+On peut voir que l'objet courant (via la pseudo variable this)
+a un attribut test dont la valeur est null.
+Et donc quand on a essayé d'appeler la méthode substring cela
+provoque l'exception NullPointerException.
+
+On peut aussi exécuter le programme pas à pas à partir d'un point
+d'arrêt.
+
+Arrêtons d'abord le programme en cliquant sur le bouton rouge ou choisissant l'option 
+"Terminate" du menu "Run".
+
+Plaçons nous sur le main de la classe Main.
+Si nous double-cliquons dans la marge au niveau du numéro de ligne
+6 un petit cercle bleu apparait. Il s'agit d'un indicateur de
+point d'arrêt (breakpoint en anglais).
+
+Si nous regardons la fenêtre Variables et Breakpoints nous voyons
+le nouveau point d'arrêt dans le panneau Breakpoint.
+En cliquant sur la case cochée nous pouvons le désactiver temporairement.
+Nous pouvons aussi le supprimer en choisissant l'option "Remove" dans le menu
+contextuel.
+
+Relançons le programme en choisissant "Debug" dans le menu "Run".
+
+Le programme démarre et se met en pause sur le point d'arrêt.
+Dans la fenêtre "Variables" nous voyons le tableau args.
+Dans le menu "Run" choisissons "Step Over".
