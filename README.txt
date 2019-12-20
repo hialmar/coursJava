@@ -925,3 +925,19 @@ Relançons le programme en choisissant "Debug" dans le menu "Run".
 Le programme démarre et se met en pause sur le point d'arrêt.
 Dans la fenêtre "Variables" nous voyons le tableau args.
 Dans le menu "Run" choisissons "Step Over".
+Le debugger lance l'exécution de la ligne courante et s'arrête à nouveau ensuite.
+On peut remarquer l'apparition de la variable monObjet dans la fenêtre variables.
+On peut aussi regarder la valeur des attributs en cliquant sur la flêche.
+Pour la ligne suivante choisissons dans le menu "Run" l'option "Step Into".
+Ce coup-ci le debugger rentre dans la méthode et nous montre son exécution.
+Ici nous pouvons à nouveau voir this dans la fenêtre Variables.
+
+Le debugger permet d'autres fonctionnalités mais nous avons vu les plus importantes
+ici.
+
+Arrêtons le programme, initialisons l'attribut test et vérifions que le programme
+fonctionne désormais sans lancer d'exception. 
+
+Pour revenir à la perspective Java normale il faut cliquer sur
+l'icône avec le petit J en haut à droite d'eclipse.
+On peut aussi choisir dans le menu "Window", "Perspective" puis "Java".
