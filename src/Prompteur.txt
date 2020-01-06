@@ -5,64 +5,70 @@ LO : expliquer la structure d'un programme simple en langage Java
 
 Script :
 
-Bienvenue dans cette vidéo du cours sur Java. Pour commencer, voilà un
-premier programme très simple qui écrit la phrase Hello World à l'écran.
+Bienvenue ...
+Premier programme très simple qui écrit la phrase Hello World à l'écran.
 
-Avant de regarder en détail ce programme, regardons un petit peu la
-fenêtre de l'application. Il s'agit de l'IDE (Integrated Development
-Environment - Environnement de Développement Intégré) Eclipse. 
+Fenêtre de l'application.
+IDE (Integrated Development Environment - Environnement de Développement Intégré) Eclipse. 
 
-Nous pouvons voir une liste des projets sur la gauche (appelée Package
-Explorer), Le projet ouvert appelé PremierProjet contient tous les
-exemples du cours. On y voit aussi la version de Java que nous
-utiliserons pour ce cours : Java SE 8. SE signifiant Standard Edition.
+Liste des projets sur la gauche (appelée Package
+Explorer), 
+Le projet ouvert appelé PremierProjet 
+version de Java que nous utiliserons pour ce cours : 
+Java SE 8. SE signifiant Standard Edition.
 
-Sur la droite nous voyons une vue synthétique du fichier ouvert au
-milieu. En bas, nous voyons la console qui affichera les sorties du
+Sur la droite vue synthétique du fichier ouvert au milieu. 
+
+En bas, console qui affichera les sorties du
 programme et permettra aussi, ensuite, de taper des informations en
-entrée du programme. Enfin, la partie centrale, présente le programme en
+entrée du programme. 
+
+Enfin, la partie centrale, présente le programme en
 cours d'édition.
 
 Regardons maintenant ce programme : 
 
-La première ligne indique un nom de paquetage. Il s'agit d'un concept 
-qui permet de grouper entre eux de façon hiérarchique des fichiers Java.
+La première ligne indique un nom de paquetage. 
+concept  qui permet de grouper entre eux de façon hiérarchique des fichiers Java.
 
 Ici nous avons un premier paquetage appelé cours qui contient un second
-paquetage appelé p1programmes. Nous pouvons voir cela dans la partie 
-gauche de manière hiérarchique. Si vous ne le voyez pas comme ça dans
-votre fenêtre vous pouvez modifier le réglage en cliquant sur l'icône
+paquetage appelé p1programmes. 
+
+Nous pouvons voir cela dans la partie gauche de manière hiérarchique. 
+
+Si vous ne le voyez pas comme ça dans
+votre fenêtre 
+cliquant sur l'icône
 en forme de flèche en haut à droite du panneau et en choisissant 
 "Package Presentation" et "Hierarchical".
 
 Revenons au programme. Nous voyons aussi sur cette première ligne un
-commentaire. Les commentaires en Java peuvent être ajoutés en tapant
+commentaire. 
+
+Les commentaires en Java 
 deux fois le signe / 
 Dans ce cas là tout le reste de la ligne (après les deux /) est un commentaire.
-On peut aussi, comme on le voit, un peu plus bas, écrire le commentaire 
-entre /* et */ dans ce cas le commentaire
-peut s'étendre sur plusieurs lignes comme ici.
+commentaire 
+entre /* et */ 
 
-La ligne de code suivante est une déclaration de classe. Nous
-reviendrons sur cette notion plus tard. Il suffit simplement de savoir
-ici que toute fonction et toute déclaration de variable en Java doit se
-trouver dans une classe. Donc il y aura toujours au moins une
-déclaration de classe par fichier.
+déclaration de classe. 
+notion plus tard. 
+savoir ici que toute fonction et toute déclaration de variable en Java doit se
+trouver dans une classe.
 
-La ligne de code suivante déclare une fonction appelée main. Comme en
-langage C dont Java hérite, la première méthode exécutée s'appelle
-toujours main. En Java elle sera toujours déclarée comme cela. Nous
-reviendrons plus tard sur la signification des différents mots clés.
+fonction appelée main. 
 
-Enfin, la dernière ligne de code (à part les accolades qui servent à
-fermer les blocs de code) contient l'instruction qui permet d'afficher
+Comme en langage C première méthode main. 
+En Java elle sera toujours déclarée comme cela.
+plus tard sur la signification des différents mots clés.
+
+Enfin, la dernière ligne de code contient l'instruction qui permet d'afficher
 du texte. 
 System.out.println("Hello World"); 
 
-On demande donc à Java d'afficher (println) le texte sur la sortie 
+afficher (println) le texte sur la sortie 
 standard (out) du Système.
-ln signifiant qu'on passera à la ligne suivante une fois le texte
-affiché.
+ln signifiant ligne suivante 
 
 Exécutons le programme.
 
