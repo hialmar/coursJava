@@ -655,7 +655,7 @@ P8 - Exceptions
 
 [Try it online!](https://tio.run/##nVTLbhNBEDzbX9HxxRsFNndQTlEiIQWQMDfEYTLbsTvMzizzcByQ/4d8hz/MdM@Os3ZiLkiWZfX0o7qq2vdqqd7eNz@2W2o75yPcc6AmV1@TwU8uXrtkm6uVxi6Ss@/HR7K@oGrQv3r68PkfZSmSqWdaWStV4/NzSBZwhW1nUH52mKAzKYB2EorjLt0a0qCNCgE@KrLwezzqPC1VRBgQgEEdk8dr0guS1iPO6kulqDqVMo6t5YGnNsryDIzc5M5ZLUCBPxZhqaBTAe4UeYQGIfrHc62iXoBWvuQERTFnMcoWbeQkjmQU0Hl3azZ/WnwGsHTUgEtLT77Aq2bRk52DdW2JnEJcePcQ4Cj1GfzhhnDBQB72GKj2mr3Pu8qeMxJMd6XGTnFFgXcW7NYxzRLZPOnE4B0zknfKrHTKR8K@CbNgFLSbp7hwjcSYkwzpBaZaGxewyuPX0JNW7VkBsJdBel7mKfj8xKxmQGTj5sljCBnkGyGcPRGhYZUExVxePZCm0ghzLcsVFAvhCa1M31Ma04pEDwjOpDyLbEM/E3fhr/3N@kk8wfZDkt1D@CxniCruVG3FW72Y376D8vPQb/hKX6Gk2D5bFZO/NGo5CFkeq9kj69PWZDOLt84ZVHYn4FWv3gWvawJKQr4Ixli69F4v8j8s2BzVyUFtEaBMcSnWfEs2GltNvqoOf8kNMmqRfGead5PccDQsw8MOd6gtruIN2aL94A8RQHQPfDEIVTN1Sfwo78rODYt2ChKU29gzai7lrerDq3nh8LxkHhGmZNjK3DQ7mP9DmulgLT3FEHuth636Q8gNjpFxM2ROzoa5Z5NSWDgZvRQm@pR12fm/On7POx0EPEMX4Az6wG/F8ceP9z9wH9z@ScG/7m8l/zGux9ttZKbGvIMet4oL7V8 "Java (JDK) – Try It Online")
 
-[JDoodle](jdoodle.com/a/2uJa)
+[JDoodle](https://jdoodle.com/a/2uJa)
 
 Lors de l'exécution d'un programme il peut y avoir des problèmes.
 Par exemple : le fichier que l'on doit utiliser n'est plus accessible, il n'y a
