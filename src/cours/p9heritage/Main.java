@@ -1,7 +1,5 @@
 package cours.p9heritage;
 
-import java.util.ArrayList;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -14,14 +12,14 @@ public class Main {
 		titi.voler();
 		
 		// Créons une liste d'animaux
-		ArrayList<Animal> listeAnimaux = new ArrayList<Animal>();
+		Animal [] tableauDAnimaux = new Animal[2];
 		
 		// on peut y mettre tout objet de type Animal ou de type dérivé
-		listeAnimaux.add(tom);
-		listeAnimaux.add(titi);
+		tableauDAnimaux[0] = tom;
+		tableauDAnimaux[1] = titi;
 		
 		// on peut tous les faire crier
-		for(Animal a : listeAnimaux) {
+		for(Animal a : tableauDAnimaux) {
 			a.crier();
 		}
 		
@@ -35,7 +33,7 @@ public class Main {
 		}
 		
 		// mais seuls les oiseaux peuvent voler
-		for(Animal a : listeAnimaux) {
+		for(Animal a : tableauDAnimaux) {
 			// testons si l'animal est un oiseau
 			if (a instanceof Oiseau) {
 				// transtypons vers le type oiseau
