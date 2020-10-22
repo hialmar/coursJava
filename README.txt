@@ -430,6 +430,8 @@ LO : expliquer la notion de type et de classe
 LO : expliquer la notion de constructeur 
 LO : définir une classe simple en langage Java
 
+[Try it online!](https://tio.run/##nVO9btswEJ6lpzh4sQM0DtDV6NQ5U8aiA01d7HMpUuUdkxRF3iWrn0MP5hwpRo3rTAEkQNLdfX9HHcyDuT50v04n6wwzfN8bgb9tc3MDFi0BskDyYEQibZO0zZ0@@B3YSJu2KX0Pgdz4ol0I/XiUfejwC9jlNIlwH7wVCorBHCyNRwSTniBsDygMHYIzULixbRSqy9AYV1dZRYYnVWESM4FiDJgUVcgRY4SOIlrBHr2AQ55V/g/b3P1hbVuHJOtB5YvzK2W5UgfP1cR7szZ4lpgUOcWpOJvhEAUz@uzqd6pzRVR2N4QUgTwJmUnmmbQC6EKcNcbxaApSfl@WWNomr@FfBJ83ri7hGyxuyYS0KHaf27Yd0taRnbrg1pDPRPUji6qxUDbRa2k1LfzHTzBxx7OkLFtjynENEXvdGFjVrMVygiT0yuvxESYnm2nq3hDnKYf5MaKmh05vnQ1Fr86t6/43F0QmScQzmj1GmxTsAyqX3o5Nia6AaqVOvCeZrky1N36HVV9OrlvW9vPBkiiGx0WdrqLnoL@@FRSTMbkLONDfpZCNx/Wl6Y8kls2dTq8 "Java (JDK) – Try It Online")
+
 Dans cette leçon nous allons apprendre à créer de nouveaux types d'objets 
 grâce au concept de Classe.
 
