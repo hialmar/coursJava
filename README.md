@@ -1,7 +1,9 @@
 Plan du cours
+=============
 
 P1 - Programmes 
-LO : expliquer la structure d'un programme simple en langage Java
+---------------
+> LO : expliquer la structure d'un programme simple en langage Java
 
 Script :
 
@@ -119,8 +121,9 @@ sommes désormais capables d'écrire des programmes simples en Java.
 
 
 P2 - Variables et constantes 
-LO : déclarer et utiliser des variables en langage Java 
-LO : déclarer et utiliser des constantes en langage Java
+----------------------------
+>LO : déclarer et utiliser des variables en langage Java 
+>LO : déclarer et utiliser des constantes en langage Java
 
 Script : Bienvenue dans cette vidéo du cours sur Java. Nous allons voir
 dans cette séquence la déclaration et l'utilisation de Variables en
@@ -203,7 +206,8 @@ Elles servent à rendre les expressions arithmétiques plus claires.
 
 
 P3 - Structures de contrôle (et portée des variables) 
-LO : utiliser des structures de contrôle dans un programme en langage Java
+-----------------------------------------------------
+> LO : utiliser des structures de contrôle dans un programme en langage Java
 
 Le but de cette vidéo est d'apprendre à écrire des structures de contrôle en Java.
 Les structures de contrôle sont, pour l'essentiel, identique au langage C.
@@ -275,14 +279,14 @@ Exécutons le code.
 
 
 
-P4 - Objets et Collections 
-LO : expliquer le principe de base de la programmation par objets 
-LO : expliquer la notion de référence 
-LO : expliquer la notion de méthode
-LO : déclarer et utiliser des variables de type référence en langage Java 
-LO : créer une instance en langage Java 
-LO : invoquer des méthodes sur des objets en langage Java
-LO : manipuler des ArrayList, HashSet et HashMap en Java
+P4 - Objets et Tableaux 
+--------------------------
+>LO : expliquer le principe de base de la programmation par objets 
+>LO : expliquer la notion de référence 
+>LO : expliquer la notion de méthode
+>LO : déclarer et utiliser des variables de type référence en langage Java 
+>LO : créer une instance en langage Java 
+>LO : invoquer des méthodes sur des objets en langage Java
 
 Nous voilà au premier concept de la programmation par objets : l'objet.
 
@@ -373,9 +377,10 @@ des objets) contenue dans chaque case du tableau.
 
 
 P5 - Classes 
-LO : expliquer la notion de type et de classe 
-LO : expliquer la notion de constructeur 
-LO : définir une classe simple en langage Java
+------------
+>LO : expliquer la notion de type et de classe 
+>LO : expliquer la notion de constructeur 
+>LO : définir une classe simple en langage Java
 
 [Try it online!](https://tio.run/##nVO9btswEJ6lpzh4sQM0DtDV6NQ5U8aiA01d7HMpUuUdkxRF3iWrn0MP5hwpRo3rTAEkQNLdfX9HHcyDuT50v04n6wwzfN8bgb9tc3MDFi0BskDyYEQibZO0zZ0@@B3YSJu2KX0Pgdz4ol0I/XiUfejwC9jlNIlwH7wVCorBHCyNRwSTniBsDygMHYIzULixbRSqy9AYV1dZRYYnVWESM4FiDJgUVcgRY4SOIlrBHr2AQ55V/g/b3P1hbVuHJOtB5YvzK2W5UgfP1cR7szZ4lpgUOcWpOJvhEAUz@uzqd6pzRVR2N4QUgTwJmUnmmbQC6EKcNcbxaApSfl@WWNomr@FfBJ83ri7hGyxuyYS0KHaf27Yd0taRnbrg1pDPRPUji6qxUDbRa2k1LfzHTzBxx7OkLFtjynENEXvdGFjVrMVygiT0yuvxESYnm2nq3hDnKYf5MaKmh05vnQ1Fr86t6/43F0QmScQzmj1GmxTsAyqX3o5Nia6AaqVOvCeZrky1N36HVV9OrlvW9vPBkiiGx0WdrqLnoL@@FRSTMbkLONDfpZCNx/Wl6Y8kls2dTq8 "Java (JDK) – Try It Online")
 
@@ -464,9 +469,10 @@ grâce au concept d'Objet et de Classe des ensembles de variables
 et de fonctions liées entre elles.
 
 P6 - Méthodes et Passage de paramètres (et public et private) 
-LO : expliquer les différents types de passage de paramètres 
-LO : définir et utiliser des méthodes avec des paramètres et des résultats 
-LO : rendre des attributs et méthodes privés ou publics en langage Java
+-------------------------------------------------------------
+>LO : expliquer les différents types de passage de paramètres 
+>LO : définir et utiliser des méthodes avec des paramètres et des résultats 
+>LO : rendre des attributs et méthodes privés ou publics en langage Java
 
 Revenons dans cette leçon sur la classe Chat.
 Nous avons ajouté sur cette déclaration de classe le mot-clé public.
@@ -562,8 +568,9 @@ duree qui ne l'est pas.
 La variable hercule n'est par contre pas modifiée.
 
 P7 - Static, Méthodes et attributs de classe 
-LO : expliquer la notion d'attribut et de méthode de classe en POO 
-LO : rendre des attributs et méthodes statiques en langage Java
+--------------------------------------------
+>LO : expliquer la notion d'attribut et de méthode de classe en POO 
+>LO : rendre des attributs et méthodes statiques en langage Java
 
 Cette leçon présente le concept d'attribut et de méthode de classe.
 Un attribut et une méthode de classe sont uniques pour tous les objets
@@ -588,9 +595,9 @@ Il n'y a pas d'objet courant lors de l'appel de la méthode et donc si on utilis
 this il y aura une erreur.
 
 P8 - Exceptions 
-LO : expliquer la notion d'exception en programmation 
-LO : déclarer l'émission d'exceptions et attrapper des exceptions en
-langage Java
+---------------
+>LO : expliquer la notion d'exception en programmation 
+>LO : déclarer l'émission d'exceptions et attrapper des exceptions en langage Java
 
 Lors de l'exécution d'un programme il peut y avoir des problèmes.
 Par exemple : le fichier que l'on doit utiliser n'est plus accessible, il n'y a
@@ -660,8 +667,9 @@ Un développeur peut aussi créer de nouvelles exceptions et les gérer.
 Nous verrons ça à la fin de la leçon sur l'héritage.
 
 P9 - Héritage (et protected) 
-LO : expliquer la notion d'héritage en POO
-LO : faire hériter une classe d'une autre classe en langage Java
+-----------------------------
+>LO : expliquer la notion d'héritage en POO
+>LO : faire hériter une classe d'une autre classe en langage Java
 
 Il arrive souvent que deux types d'objets sont très proches. Des variables et
 des méthodes sont identiques ou très peu différentes. Une solution peu efficace
@@ -751,8 +759,9 @@ si un transtypage est possible ou false sinon.
 C'est ce que nous faisons en fin de méthode main.
 
 P10 - Interfaces 
-LO : expliquer la notion de classe abstraite et d'interface 
-LO : utiliser des interfaces
+----------------
+>LO : expliquer la notion de classe abstraite et d'interface 
+>LO : utiliser des interfaces
 
 Dans d'autres langages orienté objets il y a un concept d'héritage multiple.
 Ce qui signifie qu'une classe peut hériter de plusieurs classes directement.
@@ -815,8 +824,9 @@ Ensuite on parcourt la liste en appelant la méthode voler.
 Tout se passe donc comme si la classe Oiseau héritait de deux classes...
 
 P11 - debug 
-LO : expliquer à quoi sert un debugger 
-LO : localiser des erreurs de programmation en langage Java en utilisant un debugger
+-----------
+>LO : expliquer à quoi sert un debugger 
+>LO : localiser des erreurs de programmation en langage Java en utilisant un debugger
 
 Dans cette leçon nous n'allons pas présenter de nouveaux concepts de Java.
 Nous allons montrer comment on peut corriger des problèmes et mettre au point une
@@ -893,6 +903,8 @@ On peut aussi choisir dans le menu "Window", "Perspective" puis "Java".
 
 
 Bonus : Intro aux collections
+-----------------------------
+>LO : manipuler des ArrayList, HashSet et HashMap en Java
 
 Le problème des tableaux, en Java comme dans d'autres langages, c'est
 qu'il faut savoir à l'avance le nombre de valeurs qui seront utiles.
@@ -947,5 +959,7 @@ Il y a plusieurs façon de parcourir une HashMap suivant si on s'intéresse
 plus aux clés ou plus aux valeurs.
 Voilà une solution en utilisant une variable référence de type
 HashMap.Entry. On précise ici aussi les types des indices et des valeurs.
+
+
 
 
