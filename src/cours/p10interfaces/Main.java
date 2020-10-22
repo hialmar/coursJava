@@ -9,11 +9,11 @@ public class Main {
 		Oiseau titi = new Oiseau();
 		
 		// Créons une liste d'animaux
-		ArrayList<Animal> listeAnimaux = new ArrayList<Animal>();
+		Animal [] listeAnimaux = new Animal[2];
 		
 		// on peut y mettre tout objet de type Animal ou de type dérivé
-		listeAnimaux.add(tom);
-		listeAnimaux.add(titi);
+		listeAnimaux[0] = tom;
+		listeAnimaux[1] = titi;
 		
 		// on peut tous les faire crier
 		for(Animal a : listeAnimaux) {
@@ -21,14 +21,14 @@ public class Main {
 		}
 		
 		// Créons une liste d'objets volants
-		ArrayList<ObjetVolant> listeObjetsVolants
-			= new ArrayList<ObjetVolant>();
+		ObjetVolant[] listeObjetsVolants
+			= new ObjetVolant[2];
 		
 		// titi est aussi un objet volant
-		listeObjetsVolants.add(titi);
+		listeObjetsVolants[0]=titi;
 		// comme un A380
 		Avion a380 = new Avion();
-		listeObjetsVolants.add(a380);
+		listeObjetsVolants[1]=a380;
 		
 		// on peut tous les faire voler
 		for(ObjetVolant ov : listeObjetsVolants) {
