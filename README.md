@@ -731,8 +731,8 @@ P9 - Héritage (et protected)
 > LO : faire hériter une classe d'une autre classe en langage Java
 
 [Vidéo 1](https://youtu.be/UScBvJWPPhc)
-[Vidéo 2]()
-[Vidéo 3 - Polymorphisme]()
+[Vidéo 2](https://youtu.be/H4Qk55PqrPU)
+[Vidéo 3 - Polymorphisme](https://youtu.be/LW2ihweS6jQ)
 
 [Try it online!](https://tio.run/##jVTBbhoxED0vXzHikk2khKbHokiNSA@VEiE1aS9RDmZ3ACdee2WPCajKB/EdfFg6XnsXCCgqQojdmXnz5s2zn8VCnD@XL@/vhRLOwbWWlVDwt5fV1hAWhCXck5V6BoWVw17GAT9RsoCFkWV4hzY/DfnZ/coRVhfG00XNBaR0zuFTrnnrvfV6EX80FwS4JNTlbrMONcQTHhfDFfTvpDC@36B8bD4XeoZ2ZGW@pRhraS7dRQSItA@KKym8arjT3JpXBz@WBdYkjQ4U7jxSAySneQNzBdordcpvsiYfNL4eluRh2q55QD/W2hrNX/2ZcP1fNn36EWKr4CHPVs4uwqi9bHB21svgDMLPIKxTLgQhOBLERKZSs/LKsGgOrRTqD1rHpb9/3rBml7dDRvg@XqC1ssSOfpKZTPyT@FskbzX0D5l9gwLDmpijI6iaV@d5XCar0s00lg6FP/RF1zgm7Btj5GXh5VFnLIz6VN3bExM7hsR@Z9EEETndCal3KSThonk4ljz3@ATCzlzs1bibTMX0gj@imYMl0oAkSaZYO1GIBs@YascyWUjce@bwjm26lDRoAhkMYGQ3a6MdeI2gJE8O5YkIcvolJyRhmTOJieL@N9cxlkjF@OPXpy0gu6lGT7CCCoks8nj8ZCbPvMuSn1Y1tvsyvntTbtbst8068Nzv9PjliZvxPMMjscsmxoMd9ue2DhQ6mArJLBptOGNqbJ7aC7bbB8C4lUzsSvm2I/j2AmlOd7sLu4p1Iae7J5paKAQVc8iPHMLUiyk/jG/GcO3JnM@Q1yXCHRrrJsoULyELoxfvSRQvD1YUuMeNMdhhjk@mV3HoaNdlkGKBmqLB/3d8hiM@f8EWToKKflDNkfQ6QYc8OYVcgNTsdF2gmSaPJpQGxgqOruoAxXdD4Bb3vQVpre51@nMFeYsjhi2QqGtUAUUJqDZrmht2TjtUlrXFu/5uxAnXRnMZvr//Aw "Java (JDK) – Try It Online")
 
