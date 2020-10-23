@@ -20,7 +20,6 @@ public class Chat extends Animal {
 		System.out.println("Rrrrrrrrr");
 	}
 
-	@Override
 	public void crier() {
 		try {
 			miauler();

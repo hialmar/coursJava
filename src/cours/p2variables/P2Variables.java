@@ -11,7 +11,7 @@ public class P2Variables {
 		
 		unEntier = 2; // attention le signe = est utilisé pour faire une affectation
 		unBooleen = false;
-		unBooleen = unEntier == 2; // voilà le signe == utlisé pour comparer
+		unBooleen = unEntier == 2; // voilà le signe == utilisé pour comparer
 		unReel = 2.5;
 		
 		// on peut faire des calculs

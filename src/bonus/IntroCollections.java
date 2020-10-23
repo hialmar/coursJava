@@ -58,12 +58,12 @@ public class IntroCollections {
 		populations.put("Irlande", 5);
 
 		// Pour obtenir une valeur en particulier on fera :
-		System.out.println("Population du Japon : " + populations.get("Japon"));
+		System.out.println("Population du Japon : " + populations.get("Japon") + " millions d'habitants");
 
 		// Voilà une des façons de parcourir une HashMap
 		// On peut remarquer que Java réordonne les éléments comme il veut dans ce cas
 		for (HashMap.Entry<String, Integer> me : populations.entrySet()) {
-			System.out.println("Pays : " + me.getKey() + ", Population : " + me.getValue() + " Millions.");
+			System.out.println("Pays : " + me.getKey() + ", Population : " + me.getValue() + " millions d'habitants.");
 		}
 	}
 }

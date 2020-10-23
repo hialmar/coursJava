@@ -14,7 +14,7 @@ package cours.p1programmes; // nom du paquetage (ensemble hiérarchique de fichi
 public class P1Programmes { // déclaration d'une classe (en java tout fichier doit contenir au moins une classe)
 
 	public static void main(String[] args) { // méthode principale = programme principal
-		System.out.println("Bonjour le monde !"); // affichage de texte
+		System.out.println("Hello World!"); // affichage de texte
 	}
 
 }

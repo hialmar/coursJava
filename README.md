@@ -643,7 +643,7 @@ P8 - Exceptions
 ---------------
 > LO : expliquer la notion d'exception en programmation 
 
-> LO : déclarer l'émission d'exceptions et attrapper des exceptions en langage Java
+> LO : déclarer l'émission d'exceptions et attraper des exceptions en langage Java
 
 [Vidéo](https://youtu.be/0AqTlz6df3w)
 
@@ -830,7 +830,7 @@ P10 - Interfaces
 
 > LO : utiliser des interfaces
 
-[Vidéo 1]()
+[Vidéo](https://youtu.be/694k44QnR6Q)
 
 [Try it online!](https://tio.run/##nVTbattAEH2WvmLwS5RA7KR9KQ2GGrcPhYRAQ/0S/LCRxvamq12zFyWh5IPyHfkwd/YiWbFTF2qMsXZmzjlzZlb3rGGn99WvzaYUzBiYSF4zAb/zbK2VxdJiBTdWc7mEUvOLPKOAuxO8hEbxyp@hLo59fnbzZCzWQ@XscE0FVsiCwsdU85w/53nEn66YBXy0KKs@WYfq4wmPimEMgyvOlBsElF3yFZNL1FPNi63EWGtX3AwjQJS9V1xz5kTQbldaPRj49lji2nIlvYQrhzYA8UURYMYgnRDHdJKFfJD4sF9S@G47co/@HrVWkr7ykHGDHzp9BhFi6@C@ztbOLkKoeTY6OckzOAH/M/Lj5A2zCMYyS0IWXJLzQpFpBjVnYobaUOnP71/Js/PLC0L4ct2g1rzCTn6y2ar4J@nXaJ2WMNhX9hlK9GMijcZCHY5OizhMcoV@qF3UC0Zp13f3aGdKMBmc7xvWKBG97Ey45gaZ210kXq8F1iit2UHr4GLd2wWbOl463m3Yftd9DX8d2OWRipp84mBn6yeNn8oBef9NygKyzxtuSfOEEcmvGJd9D9IGxFtAsXR5bufA9NJEsnBNrarJH7/o8Vb63U7GW255irWW@ih9RyOY6tcXJQ04iSA4qYbqiPkJuUdKSLMiuhCbxEACi8HbD/MtGrW3RmfhCWq0ViPJoiflDYSKnp7W2M5fue6ken2hhX99IYw@ze3ZnJiosYvdwHkIUFv7zERoQKCBBePEH242ZSyULhIxo03vo0UTM9Z7C/jlOuBP6Mf4QdJKGG/0dkNaq8KRmXUpWRpAL7NvXJiRv3fMGcOJLZkWOdr@34CSPePWA0IoVV2jL5x8/HTmRxeWjdFDOy5/ENt7B@x8Pva5/zQ0bHkytH8xVNPa@gY3mauaYfdeCO761d9s/gA "Java (JDK) – Try It Online")
 
@@ -900,7 +900,7 @@ P11 - debug
 
 > LO : localiser des erreurs de programmation en langage Java en utilisant un debugger
 
-[Vidéo 1]()
+[Vidéo](https://youtu.be/_654X0O3EYs)
 
 [Try it online!](https://tio.run/##TY@xDoIwEEBn@IqLUxlEnY2Ts3FgNA4FLliEq6FXjDF8O15RiFOHu773rta9XtflfRyLRjsHJ30ML8I7jh6d6TUjZNwZqoDR8R42GzjAqremMOAJobFUeYTipg3hah9H8s/njSlAdsqwckK@2RJVEphR9nKMbWo9p8InbkgFcOp87iaP2m2TRDiDoIY4/sHmOkNCWRSONc@mVmbqm3q5gu4q9xUuF7WWznmNLP2Ez@VSFWRSHc3z9L95CpGOcfwA "Java (JDK) – Try It Online")
 
@@ -983,7 +983,9 @@ Bonus : Intro aux collections
 -----------------------------
 > LO : manipuler des ArrayList, HashSet et HashMap en Java
 
-[Vidéo 1]()
+[Vidéo](https://youtu.be/rH-dImmoIcM)
+
+[Try it online!](https://tio.run/##jVbbbhs3EH22v2KgF8mIq1yA5sG5AEUvaNIENWAgL0UfqN2RRZfL3ZBcF0KQf@lboz70J/bD3DMkd7WypLiAoF2Rcz0zZ0Y36lZ9c1P@cXenq6Z2gW5wMG@DNvPvnFPrd9qHF6d7dz8rv3qvmiM3Vwyd06ZdGF1QYZT39F5pS59OT/KhDyrgcVvrkipcza6C0/b6t99JuWt/JpInjx/TG0NrUqRa7zWV7JMxPN/CH31sNV13XxzbEC8NYsWjnNaLGw4@mTCKbC3eaksvk5fX5KeqadgYptZSo5yqui/BMazA4MZ2G6cLHbrNYGLnlNgHUSxqW3ATCLHYohcuta@tJw9gDFcSGpQQ6hT@tS31x5ap@6tPQE5vuQ1Jt7WckpBAipXq/rWSD94RYhEkVclqKMyQT1T6fgUgIf@KLP9Je0KzsxfQHUvOVVnOJuK0iAeTr0ioVvB5WG4rkVJq6tYJUL41gZ1A2TiutKSSZekCkldrGKvmdRvmDaINxs527F9zmD05i35hNILnlQb0y6UuVmL4YP0fMDtEeaUpF2Jcgymqp2EbV2UNZ9Lf2kdnFNYN0xsb@JpdsiHd2LCrWJqRglPWL2v8dNIq2RJbirHtFDFbyVX8MUruV7GXGpUxi0bwnx4@fhaPkTn5uqoYVp9kDJFUE/Ptk0KUiJdYFatUNfCiwFOPwYWuCM3EYs7pYifuRN2T5O3RqywkPj8frsfkncqx3aLHaEKP0s9DtQELXY@n52qBOljc1a6sLehJJTBHsKCYEaFuY7qNUDAZQmFjxo3y1P0T6d42BoSE5haNBAYYKq1qVBG5OJQB2eYBB5v5bWBhH9QuEe9JpfrdEz3MxKNC@2REej7ipG4ALtPWFOlSagBMzilOPCuzD/NEo0UjFgm1ae8tWdNG8PIsEvgGwAU5zfb/xn6cpb36Q0S956a3@muuVMmVsiVsIu9RtjKaG9dtPJLmA6npJd23PMd4Cnjzu1nkTj7SstnddKsxjb4XwGgbwDyB8Tm38qVyy1p7NG3rsTVkTyzY19iM5VR2Q5EhGhpXMEIjB4VoVZsnqnJx2yUFHxnAmfL0gyRcyMLw5/sU7@dW3t5bQBFvIRJKLKG1XhKm2Gs4VwuQa9Abu53FDdpt5KjolzPSPktWoT/WmiAg9hMwrk/mkIFbZbh10UQOMbPmnIYh2dRNa@I6HxPskGhi2kh@3rRhNvkJk7ngyTk9f35Y4K1qaov7p8@OCLxxRloPIt8OU@pSJma9CGy1i/2YcpGJj4Lhv05r8ipZCsxHdt7kcvAlUMVIMHJkKI6jkG2YwzzD1YQqbUxEpJyu1EIHhdbZ7uAPtTYYaBKVoLxU3d9RlkcjXi732kKaB9taOUwPR/LPJXIa3ZJGLt/v1iIOcsyOOK7LbTP2eyO7mGNbuPV@caF8sZOptOMa03P2NTpeqrXPKFUs4PzC61kE5pxGgI4lPijT8uw4eANx8QF77@7@Aw "Java (JDK) – Try It Online")
 
 Le problème des tableaux, en Java comme dans d'autres langages, c'est
 qu'il faut savoir à l'avance le nombre de valeurs qui seront utiles.
