@@ -3,6 +3,7 @@ package bonus;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class IntroCollections {
 	public static void main(String[] args) {
@@ -46,6 +47,10 @@ public class IntroCollections {
 		// On peut demander si une chaine est présente dans l'ensemble
 		if (ensembleChaines.contains("une chaine")) {
 			System.out.println("La chaine 'une chaine' est bien présente.");
+		}
+		
+		for(String s :ensembleChaines ) {
+			System.out.println(s);
 		}
 
 		// Parfois nous avons besoin d'indicer les éléments d'un tableau

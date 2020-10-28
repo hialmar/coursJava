@@ -1,6 +1,8 @@
 package cours.p10interfaces;
 
-public class Oiseau extends Animal implements ObjetVolant {
+import java.io.Serializable;
+
+public class Oiseau extends Animal implements ObjetVolant, Serializable {
 
 	public Oiseau() {
 		cri = "Cuicui";

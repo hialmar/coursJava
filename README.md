@@ -404,6 +404,34 @@ La variable prendra successivement la valeur (ou la référence pour
 des objets) contenue dans chaque case du tableau.
 
 
+P4 BIS - JVM et Ramasse Miettes
+
+Les programmes Java ne sont pas directement exécutés par votre machine.
+Ils sont exécutés par une machine virtuelle qu'on appelle la JVM (Java Virtual Machine).
+Cette machine virtuelle peut exécuter des programmes écrits dans d'autres langages (Kotlin, Scala, Groovy...).
+
+En fait le compilateur Java (javac) génère ce qu'on appelle un bytecode. 
+Il s'agit d'un langage machine qui ressemble à celui que comprend un processeur d'ordinateur.
+Ce bytecode est ensuite traduit en langage machine de votre processeur.
+
+Cette traduction se fait à la volée la première fois puis on stocke le code traduit pour une portion
+du code complet de façon à ce que la prochaine exécution de ce code soit plus rapide.
+Ainsi si on passe 100 fois dans une boucle, la première fois verra la traduction du bytecode 
+(et sera donc un peu lente) alors que les 99 autres fois ré-utiliseront le code traduit 
+(et seront bien plus rapides). C'est ce qu'on appelle la JIT (Just In time Translation).
+
+L'avantage de l'utilisation de la JVM est qu'on compile une seule fois le code et ensuite on peut
+l'exécuter sur de nombreuses machines différentes : PC sous Windows, PC sous Linux, Mac, Smartphone, 
+tablette et télévision sous Android...
+
+Il y a une spécification très complète de la JVM et donc plusieurs implémentations de cette JVM.
+Dans nos exemples nous utilisons l'implémentation d'Oracle mais vous pourrez, si vous le souhaitez,
+utiliser l'implémentation libre OpenJDK.
+
+La plupart des JVM implémente un ramasse miettes. Le ramasse miettes est un petit programme qui
+regarde quels objets ne sont plus utiles et qui recycle la mémoire utilisée par ces objets.
+Donc il fait l'équivalent des appels de la fonction free de C (new faisant l'équivalent de malloc).
+
 P5 - Classes 
 ------------
 >LO : expliquer la notion de type et de classe 

@@ -1,7 +1,5 @@
 package cours.p10interfaces;
 
-import java.util.ArrayList;
-
 public class Main {
 
 	public static void main(String[] args) {

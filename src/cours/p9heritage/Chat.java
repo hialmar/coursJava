@@ -19,5 +19,12 @@ public class Chat extends Animal {
 	public void ronronner() {
 		System.out.println("Rrrrrrrrr");
 	}
+	
+	// exemple d'utilisation de super
+	// si on veut que le chat crie et ronronne en même temps
+	public void crier() {
+		super.crier();
+		this.ronronner();
+	}
 
 }
