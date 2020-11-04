@@ -1,4 +1,4 @@
-package p12enums;
+package cours.p12enums;
 
 public enum JourSemaine {
 	LUNDI, MARDI, MERCREDI, JEUDI, VENDREDI, SAMEDI, DIMANCHE;
