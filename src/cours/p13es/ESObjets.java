@@ -26,8 +26,10 @@ class MaClasse implements Serializable {
 	 * Par exemple pour Date on peut lire dans la doc : All Implemented Interfaces:
 	 * Serializable, Cloneable, Comparable<Date> Donc il y a bien Serializable
 	 */
-	private int entier;
 	private String chaine;
+	
+	private int entier;
+
 	private Date date;
 
 	/**
@@ -60,6 +62,7 @@ public class ESObjets {
 		// on l'affiche
 		System.out.println(var);
 		try {
+			
 			// Création d'un nouveau flux qui crée un fichier binaire
 			FileOutputStream sortie = new FileOutputStream("fichier.bin");
 			// On crée un flux plus évolué en encapsulant le précédent flux
@@ -80,14 +83,22 @@ public class ESObjets {
 			// On lit un objet sur le flux
 			// Ca recrée l'objet et ses attributs (new)
 			// Il faut caster car readObject renvoie un Object
-			MaClasse var2 = (MaClasse) entreeObjets.readObject();
-			// On affiche l'objet lu
-			System.out.println(var2);
-			
-			// on peut bien vérifier qu'il s'agit d'un nouvel objet :
-			if(var2 != var) {
-				System.out.println("Il s'agit bien d'un autre objet");
+			Object obj = entreeObjets.readObject();
+			// on vérifie que l'objet est du bon type
+			if (obj instanceof MaClasse) {
+				// on caste
+				MaClasse var2 = (MaClasse) obj;
+				// On affiche l'objet lu
+				System.out.println(var2);
+				
+				// on peut bien vérifier qu'il s'agit d'un nouvel objet :
+				if(var2 != var) {
+					System.out.println("Il s'agit bien d'un autre objet");
+				}
 			}
+			
+			// il vaut mieux fermer le flux
+			entreeObjets.close();
 			
 		} catch (FileNotFoundException e) {
 			// en cas de fichier inexistant

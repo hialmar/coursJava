@@ -1,5 +1,6 @@
 package cours.p13es;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -9,6 +10,13 @@ public class ESBinaires {
 
 	public static void main(String[] args) {
 		try {
+			
+			// Testons si le fichier existe :
+			File fichier = new File("fichier.bin");
+			
+			if(fichier.exists()) {
+				System.out.println("Le fichier existe");
+			}
 			
 			// Création d'un nouveau flux qui crée un fichier binaire
 			FileOutputStream sortie = new FileOutputStream("fichier.bin");

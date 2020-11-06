@@ -10,7 +10,10 @@ import java.util.Date;
 
 import com.google.gson.Gson;
 
-// ici nous n'avons pas besoin de serializable
+// ici nous n'avons pas besoin de Serializable
+// par contre attention aux structures circulaires !
+// Une classe A a un attribut de type B qui a un attribut de type A
+// JSON ne peut pas gérer cela alors que Serializable le peut.
 class Classe2 {
 	/**
 	 * Attributs qui seront sauvegardés avec l'objet.
